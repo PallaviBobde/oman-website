@@ -1,5 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/common/header";
+import Footer from "@/components/common/Footer";
+import ImageWithContent from "@/components/common/ImageWithContent";
+import MasterContainer from "@/components/common/MasterContainer";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +16,59 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <MasterContainer>
+          <Image
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/planet_logo_climate_justice_rgb.svg"
+            alt=""
+            width={90}
+            height={100}
+            className="m-10"
+          />
+          <Image
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/UNEP_2019_supports_the_unep.svg"
+            alt=""
+            width={100}
+            height={100}
+            className="m-10"
+          />
+          <Image
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/un_decade.svg"
+            alt=""
+            width={200}
+            height={100}
+            className="m-10"
+          />
+          <Image
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2023/10/Transparente_Zivilgesellschaft_en_2023.png"
+            alt=""
+            width={200}
+            height={100}
+            className="m-10"
+          />
+        </MasterContainer>
+        <ImageWithContent>
+          <p className="text-lg mb-4 text-gray-700 mx-20 mt-[-80px]">
+            <span className="text-[#209653]">Plant-for-the-Planet</span> is a
+            global movement empowering young people and organizations to restore
+            forest ecosystems and fight for climate justice. To do so, we{" "}
+            <span className="text-[#209653]">educate young people</span>,{" "}
+            <span className="text-[#209653]">restore ecosystems</span>,{" "}
+            <span className="text-[#209653]">conduct restoration research</span>
+            ,{" "}
+            <span className="text-[#209653]">
+              provide`` free software tools
+            </span>{" "}
+            and <span className="text-[#209653]">restoration advice</span> for
+            organizations around the world. We believe that we need to protect
+            the world’s three trillion trees and bring back a further one
+            trillion trees
+          </p>
+        </ImageWithContent>
+        <Footer />
+      </body>
     </html>
   );
 }

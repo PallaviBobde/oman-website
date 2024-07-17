@@ -1,0 +1,55 @@
+/* components/FlipCard.module.css */
+.card {
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.cardInner {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .cardInner {
+  transform: rotateX(180deg);
+}
+
+.cardFront, .cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.cardFront {
+  background-size: cover;
+  background-position: center;
+}
+
+.cardBack {
+  background: white;
+  color: black;
+  transform: rotateX(180deg);
+}
+
+.cardText h1 {
+  margin: 0;
+}
+
+.cardText h2 {
+  margin: 10px 0 0;
+}
+
+.cardText p {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
