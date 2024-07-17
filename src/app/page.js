@@ -11,7 +11,7 @@ import MasterContainer from "@/components/common/MasterContainer";
 import VideoContainer from "@/components/common/VideoContainer";
 import PartnersTab from "@/components/home/PartnersTabs";
 
-const flowbite = dynamic(()=>import('flowbite'));
+// const flowbite = dynamic(()=>import('flowbite'));
 import { useEffect } from "react";
 
 
@@ -36,12 +36,16 @@ const markers = [
 
 export default function Home() {
   useEffect(() => {
-     if (typeof window !== 'undefined') {
-      flowbite.then((flowbite) => {
-      flowbite.default();
-    });
-     }
-    
+    // Dynamically import Flowbite
+    const loadFlowbite = async () => {
+      const flowbiteModule = await import('flowbite');
+      // Assuming Flowbite exports an initialization function
+      // Adjust according to actual export if necessary
+      flowbiteModule.default();
+    };
+
+    // Call the function to load Flowbite
+    loadFlowbite();
   }, []);
   const videoLinks = [
     'https://www.youtube.com/embed/4JgbRIQzFDU',
