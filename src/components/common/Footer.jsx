@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">
-                  Children's Conferences
+                  Childrens&apos; Conferences
                 </a>
               </li>
               <li className="mb-2">
