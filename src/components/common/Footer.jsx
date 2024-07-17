@@ -1,32 +1,45 @@
 export default function Footer() {
   return (
-    <footer class="text-gray-600 body-font bg-[#F6FBF4]">
-      <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
+    <footer className="text-gray-600 body-font bg-[#F6FBF4]">
+      <div className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
             OTHER
           </h2>
-          <nav class="list-none mb-10">
+          <nav className="list-none mb-10">
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800 mt-10">TreeGame</a>
+              <a className="text-gray-600 hover:text-gray-800 mt-10" href="">
+                TreeGame
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800">Shop</a>
+              <a className="text-gray-600 hover:text-gray-800" href="">
+                Shop
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800">Privacy Terms</a>
+              <a className="text-gray-600 hover:text-gray-800" href="">
+                Privacy Terms
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800"> Imprint</a>
+              <a className="text-gray-600 hover:text-gray-800" href="">
+                {" "}
+                Imprint
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800">Sign In </a>
+              <a className="text-gray-600 hover:text-gray-800" href="">
+                Sign In{" "}
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800">Report Fraud</a>
+              <a className="text-gray-600 hover:text-gray-800" href="">
+                Report Fraud
+              </a>
             </li>
             <li className="mb-2">
-              <a class="text-gray-600 hover:text-gray-800">
+              <a className="text-gray-600 hover:text-gray-800" href="">
                 Platform Documentation
               </a>
             </li>

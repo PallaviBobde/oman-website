@@ -4,11 +4,14 @@ import FaqAccordion from "@/components/common/FaqAccordian";
 import ImageSlider from "@/components/common/ImageSlider";
 import ImageWithContent from "@/components/common/ImageWithContent";
 import ImageWithSubheading from "@/components/common/ImageWithSubHeading";
-import MapComponent from "@/components/common/MapComponent";
+import dynamic from "next/dynamic";
+// import MapComponent from "@/components/common/MapComponent";
+const MapComponent = dynamic(()=>import('../components/common/MapComponent'),{ssr:false})
 import MasterContainer from "@/components/common/MasterContainer";
 import VideoContainer from "@/components/common/VideoContainer";
 import PartnersTab from "@/components/home/PartnersTabs";
-import 'flowbite';
+
+const flowbite = dynamic(()=>import('flowbite'),{ssr:false});
 import { useEffect } from "react";
 
 
@@ -33,9 +36,12 @@ const markers = [
 
 export default function Home() {
   useEffect(() => {
-    import('flowbite').then((flowbite) => {
+     if (typeof window !== 'undefined') {
+      flowbite.then((flowbite) => {
       flowbite.default();
     });
+     }
+    
   }, []);
   const videoLinks = [
     'https://www.youtube.com/embed/4JgbRIQzFDU',
@@ -52,6 +58,10 @@ export default function Home() {
   'https://cdn.pixabay.com/photo/2023/06/10/16/02/plant-8054344_1280.jpg'
   ]
   
+  // if (typeof window !== 'undefined') {
+  //   return <></>
+  // }
+
   return (
     <>
     <ImageSlider images={images}/>
