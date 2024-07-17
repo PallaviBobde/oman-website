@@ -11,7 +11,7 @@ import MasterContainer from "@/components/common/MasterContainer";
 import VideoContainer from "@/components/common/VideoContainer";
 import PartnersTab from "@/components/home/PartnersTabs";
 
-const flowbite = dynamic(()=>import('flowbite'),{ssr:false});
+const flowbite = dynamic(()=>import('flowbite'));
 import { useEffect } from "react";
 
 
