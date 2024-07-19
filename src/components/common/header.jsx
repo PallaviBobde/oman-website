@@ -46,9 +46,18 @@ export default function Header() {
               Blogs
             </a>
           </nav>
-          <button class="font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base mt-4 md:mt-0 bg-gradient-to-b from-[#60AB32] to-[#0C7D48] text-[#fff]">
+          <a
+            class="font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base mt-4 md:mt-0 bg-gradient-to-b from-[#60AB32] to-[#0C7D48] text-[#fff]"
+            href="/donation"
+          >
             Donate
-          </button>
+          </a>
+          <a class="ml-5 hover:text-gray-900 font-semibold" href="/login">
+            Login
+          </a>
+          <a class="ml-5 hover:text-gray-900 font-semibold" href="/signup">
+            Sign Up
+          </a>
         </div>
       </header>
       <div className="py-10" />
