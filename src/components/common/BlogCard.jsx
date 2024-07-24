@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogCard = ({ imageUrl, date, heading, description }) => {
   return (
-    <div className="w-[30%] bg-white rounded-[20px] shadow-lg overflow-hidden m-2  transition-transform duration-300 hover:-translate-y-2 ">
+    <div className="w-[30%] bg-white rounded-[20px] shadow-lg overflow-hidden m-2  transition-transform duration-300 hover:-translate-y-2 pb-20 ">
       <img
         src={imageUrl}
         alt={heading}

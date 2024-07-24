@@ -89,7 +89,7 @@ export default function Home() {
         rounded
         border
       />
-      <ImageWithContent
+      {/* <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/Plant-for-the-Planet-Platform-Illustration.webp"
         heading="The Plant-for-the-Planet Platform"
         subheading="A free software toolset to fund, manage and monitor forest restoration. Used by over 300 projects around the world. Get started within minutes."
@@ -104,17 +104,17 @@ export default function Home() {
 Partner with us"
         rounded
         border
-      />
-      <VideoContainer
+      /> */}
+      {/* <VideoContainer
         videos={videoLinks}
         heading="Latest videos"
         // subheading="Check out these awesome videos"
-      />
-      <MasterContainer heading="The Plant-for-the-Planet Blog">
+      /> */}
+      {/* <MasterContainer heading="The Plant-for-the-Planet Blog">
         <ImageWithSubheading imageUrl="https://blog.plant-for-the-planet.org/wp-content/uploads/2024/07/20240617_ambassador_award_blog.jpg" subheading="The Ambassador Awards Project"/>
         <ImageWithSubheading imageUrl="https://blog.plant-for-the-planet.org/wp-content/uploads/2024/07/20240617_ambassador_award_blog.jpg" subheading="The Ambassador Awards Project"/>
         <ImageWithSubheading imageUrl="https://blog.plant-for-the-planet.org/wp-content/uploads/2024/07/20240617_ambassador_award_blog.jpg" subheading="The Ambassador Awards Project"/>      </MasterContainer>
-        <div className="flex items-center justify-center mb-20"><ButtonWithArrow buttonText="Read blogs here"/></div>
+        <div className="flex items-center justify-center mb-20"><ButtonWithArrow buttonText="Read blogs here"/></div> */}
         
 
       

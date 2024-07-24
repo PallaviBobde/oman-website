@@ -16,7 +16,7 @@ const VideoContainer = ({ videos, heading, subheading }) => {
         {videos.map((link, index) => (
           <div
             key={index}
-            className="flex-1 min-w-[400px] max-w-[calc(25%-1rem)] h-[300px] bg-gray-500"
+            className="flex-1 min-w-[400px] max-w-[calc(25%-1rem)] h-[450px] text-gray-600"
           >
             <iframe
               width="100%"
@@ -27,6 +27,8 @@ const VideoContainer = ({ videos, heading, subheading }) => {
               allowFullScreen
               className="flex-1 min-w-[400px] max-w-[calc(25%-1rem)] h-[300px] bg-gray-500"
             ></iframe>
+            <p className="font-bold mt-3">Title</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus enim neque sit excepturi corporis explicabo aspernatur laborum officiis iusto fugit!</p>
           </div>
         ))}
       </div>
