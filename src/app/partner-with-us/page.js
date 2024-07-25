@@ -9,11 +9,57 @@ import BgImageText from "@/components/partners/TopImageWithText";
 export default function Page() {
   return (
     <>
-    <BgImageText/>
-      <div className="text-center text-gray-800 my-10">
-        <h1 className="font-bold text-5xl">Our Solutions</h1>
-        <h2 className="text-bold text-4xl">for Sustainable Companies</h2>
+      <div className="bg-[#F1FAF4]">
+        <BgImageText />
+        <div className="text-center text-gray-800 my-10 ">
+          <div className="my-20">
+            <h1 className="font-bold text-5xl mx-20">
+              Let&apos;s make a difference together
+            </h1>
+            <h2 className="text-bold text-xl mx-20">
+              Plant-for-the-Planet is a global movement fighting for climate
+              justice. We work on solutions for the most urgent challenges in
+              the field of ecosystem restoration. We empower children and young
+              people, restore ecosystems ourselves, conduct research, provide
+              free software tools and advice to restoration organizations around
+              the world.
+            </h2>
+          </div>
+        </div>
+       
+         <div className="flex flex-wrap justify-center bg-[#F1FAF4]">
+        <img
+          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Youth-empowerment.png"
+          alt="Content Image"
+          className="w-[40vw] mx-5"
+        />
+        <img
+          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-tools.png"
+          alt="Content Image"
+          className="w-[40vw] mx-5"
+        />
+        <img
+          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-Advice.png"
+          alt="Content Image"
+          className="w-[40vw] mx-5"
+        />
+        <img
+          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/The-Change-Choclate-e1716314445105.png"
+          alt="Content Image"
+          className="w-[40vw] mx-5"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2017/11/12/13/37/forest-2942477_1280.jpg"
+          alt="Content Image"
+          className="w-[85vw] m-5 h-[30vh] rounded-[20px] "
+        />
       </div>
+      </div>
+
+      <div className="text-center text-gray-800 my-10">
+          <h1 className="font-bold text-5xl">Our Solutions</h1>
+          <h2 className="text-bold text-4xl">for Sustainable Companies</h2>
+        </div>
 
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/My-Forest.png"
@@ -57,10 +103,13 @@ export default function Page() {
         border
       >
         <p className=" mb-4 text-gray-700 mt-10 text-[20px]">
-          Restore forests by selling your products, for instance by planting one tree with every product sold. <br />
+          Restore forests by selling your products, for instance by planting one
+          tree with every product sold. <br />
           <br />
-          Integrate the licensed Plant-for-the-Planet logo and a tree-tracking code on your product. Take inspiration from  <span className="text-[#209653]">The Change Chocolate</span>, with 10 million trees planted.
-          
+          Integrate the licensed Plant-for-the-Planet logo and a tree-tracking
+          code on your product. Take inspiration from{" "}
+          <span className="text-[#209653]">The Change Chocolate</span>, with 10
+          million trees planted.
         </p>
       </ImageWithContent>
 
@@ -83,18 +132,17 @@ project-related cooperation"
         border
         buttonText="About our Research Park"
       >
-         <p className="text-gray-700 text-[20px]">
-          Are you passionate about research and development? We need your support to address essential unanswered questions in restoration ecology, together with our partner universities.
+        <p className="text-gray-700 text-[20px]">
+          Are you passionate about research and development? We need your
+          support to address essential unanswered questions in restoration
+          ecology, together with our partner universities.
         </p>
         <br />
         <p className="text-gray-700 text-[20px]">
-          Sponsor exclusive research questions or development projects. Our partnerships team will be happy to advise you.
+          Sponsor exclusive research questions or development projects. Our
+          partnerships team will be happy to advise you.
         </p>
       </ImageWithContent>
-
-
-
-
 
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Forest-Software-Advice.png"
@@ -104,7 +152,9 @@ project-related cooperation"
         border
       >
         <p className="text-gray-700 text-[20px]">
-          We need your support to provide cutting edge ecosystem restoration tools for free everywhere, like FireAlert, SeedManager or our Restoration Advice.
+          We need your support to provide cutting edge ecosystem restoration
+          tools for free everywhere, like FireAlert, SeedManager or our
+          Restoration Advice.
         </p>
       </ImageWithContent>
 

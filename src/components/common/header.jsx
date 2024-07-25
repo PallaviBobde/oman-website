@@ -30,11 +30,24 @@ export default function Header() {
             <a class="mr-5 hover:text-gray-900 font-semibold" href="/projects">
               Projects
             </a>
-            <a class="mr-5 hover:text-gray-900 font-semibold" href="/live-and-podcasts">
+            <a
+              class="mr-5 hover:text-gray-900 font-semibold"
+              href="/live-and-podcasts"
+            >
               Live and podcasts
             </a>
             <a class="mr-5 hover:text-gray-900 font-semibold" href="/academy">
               Academy
+              {/* <div className="absolute top-20 bg-white flex flex-col text-gray-500 z-40 font-normal p-2 text-[12px] border rounded">
+                <a href="/partner-with-us">Youth and Children's</a>
+                <a href="/donate-for-research-park">
+                  Donate for the Research Park
+                </a>
+                <a href="/endowent">Endowent</a>
+                <a href="/donation">Donate</a>
+                <a href="/donation">Donate Tree</a>
+                <a href="/donation">Donate Land</a>
+              </div> */}
             </a>
             <a
               class="mr-5 hover:text-gray-900 font-semibold"
@@ -47,6 +60,16 @@ export default function Header() {
               href="/support-us"
             >
               Support Us
+              {/* <div className="absolute top-20 bg-white flex flex-col text-gray-500 z-40 font-normal p-2 text-[12px] border rounded">
+                <a href="/partner-with-us">Partener with us</a>
+                <a href="/donate-for-research-park">
+                  Donate for the Research Park
+                </a>
+                <a href="/endowent">Endowent</a>
+                <a href="/donation">Donate</a>
+                <a href="/donation">Donate Tree</a>
+                <a href="/donation">Donate Land</a>
+              </div> */}
             </a>
             <a class="mr-5 hover:text-gray-900 font-semibold" href="/tracking">
               Tracking
