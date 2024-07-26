@@ -21,12 +21,12 @@ export default function RootLayout({ children }) {
         {children}
         <MasterContainer>
           <Image
-            src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/planet_logo_climate_justice_rgb.svg"
-            alt=""
-            width={90}
-            height={100}
-            className="m-10"
-          />
+              src="/main-logo.png"
+              width={150}
+              height={20}
+              alt="Plant for the Planet Logo"
+              // className="mb-[-30px]"
+            />
           <Image
             src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/UNEP_2019_supports_the_unep.svg"
             alt=""
