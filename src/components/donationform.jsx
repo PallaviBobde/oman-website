@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React, { useState } from "react";
 
 const DonationForm = () => {
@@ -23,9 +24,12 @@ const DonationForm = () => {
       }}
     >
       <div className="md:w-1/2 flex flex-col justify-end p-8">
-        <img
-          src="https://cdn.plant-for-the-planet.org/media/cache/profile/thumb/62eab88ec587b897478825.png"
-          width="60px"
+        <Image
+          src="/main-logo.png"
+          width={100}
+          height={20}
+          alt="Plant for the Planet Logo"
+          className="mb-[-30px]"
         />
         <h1 className="text-2xl font-bold mt-4 text-center md:text-left">
           Support Plant-for-the-Planet
@@ -41,7 +45,7 @@ const DonationForm = () => {
       <div className="md:w-1/2  mt-8 md:mt-0 text-gray-700">
         <div className="bg-white p-6 rounded-[20px] shadow-md scale-105">
           <div className="flex justify-end mb-4 text-[14px] text-[#68B030]">
-            <button className="">Login & Continue</button>
+            <a href="/login">Login & Continue</a>
           </div>
           <div className="flex justify-around mb-4 bg-gray-200 p-2 rounded-[25px]">
             <button

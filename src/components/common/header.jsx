@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaHome,
@@ -21,9 +22,12 @@ export default function Header() {
       <header class="text-gray-600 body-font border-b-2 fixed top-0 bg-white w-full z-20">
         <div class=" mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center  z-9999">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img
-              src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/PftP-Logo.svg"
-              width="60px"
+            <Image
+              src="/main-logo.png"
+              width={100}
+              height={20}
+              alt="Plant for the Planet Logo"
+              className="mb-[-30px]"
             />
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-s pt-10 ">

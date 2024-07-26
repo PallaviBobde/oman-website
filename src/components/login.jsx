@@ -1,19 +1,22 @@
+import Image from "next/image";
 import React from "react";
 import { FaGoogle, FaApple, FaFacebook } from "react-icons/fa";
 
 const LoginForm = () => {
   return (
     <div className="py-10 max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg text-gray-800 max-w-[400px]">
-      <img
-        src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/PftP-Logo.svg"
-        width="60px"
+      <Image
+        src="/main-logo.png"
+        width={70}
+        height={20}
+        alt="Plant for the Planet Logo"
       />
-      <h1 className="text-2xl  r mb-4 mt-4">Welcome</h1>
-      <p className="text-gray-600  mb-6 text-[14px]">
+      <h1 className="text-2xl  r mb-4 mt-[-20px]">Welcome</h1>
+      <p className="text-gray-600  mb-2 text-[14px]">
         Log in to Plant-for-the-Planet Account to continue to
         donate.plant-for-the-planet.org.
       </p>
-      <form className="space-y-4">
+      <form className="space-y-2">
         <label htmlFor="email" className="block">
           <input
             type="email"
@@ -42,7 +45,7 @@ const LoginForm = () => {
         <div className="h-[1px] w-[43%] bg-gray-300" />
       </div>
 
-      <div className="flex flex-col gap-2 mt-6">
+      <div className="flex flex-col gap-2 mt-2">
         <button className="flex items-center w-full pl-3 py-3 border rounded-[25px] text-gray-700 ">
           <FaGoogle size={20} className="mr-2 mr-3" /> Continue with Google
         </button>

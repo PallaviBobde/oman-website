@@ -1,14 +1,17 @@
+import Image from "next/image";
 import React from "react";
 import { FaGoogle, FaApple, FaFacebook } from "react-icons/fa";
 
 const SignUpForm = () => {
   return (
-    <div className="py-10 max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg text-gray-800 max-w-[400px]">
-      <img
-        src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/PftP-Logo.svg"
-        width="60px"
+    <div className="py-5 max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg text-gray-800 max-w-[400px]">
+      <Image
+        src="/main-logo.png"
+        width={70}
+        height={20}
+        alt="Plant for the Planet Logo"
       />
-      <h1 className="text-2xl  r mb-4 mt-4">Create Your Account</h1>
+      <h1 className="text-2xl  r mb-4 mt-[-20px]">Create Your Account</h1>
       <p className="text-gray-600  mb-6 text-[14px]">
         Sign Up to Plant-for-the-Planet Account to continue to
         plant-for-the-planet.org.
