@@ -16,14 +16,14 @@ const FlipCard = ({
           style={{ backgroundImage: `url(${imageUrl})` }}
         >
           <div className={styles.cardText}>
-            <h1 className="font-bold">{frontText}</h1>
-            <h2 className="text-[14px]">{frontSubheading}</h2>
+            <h1 className="font-bold text-center">{frontText}</h1>
+            <h2 className="text-xl text-center">{frontSubheading}</h2>
           </div>
         </div>
         <div className={styles.cardBack}>
           <div className={styles.cardText}>
-            <h1>{backTitle}</h1>
-            <p>{backText}</p>
+            <h1 className="font-bold">{backTitle}</h1>
+            <p className="text-xl"> {backText}</p>
           </div>
         </div>
       </div>

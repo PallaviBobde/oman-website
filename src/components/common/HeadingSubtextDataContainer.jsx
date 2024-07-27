@@ -10,7 +10,7 @@ const HeadingSubtextDataContainer = ({ heading, subtext, children, background })
         {heading && (
           <h2 className="text-4xl font-bold mb-5 text-gray-800 text-center">{heading}</h2>
         )}
-        {subtext && <p className="text-lg mb-4 text-gray-700 text-center text-[20px]">{subtext}</p>}
+        {subtext && <p className=" mb-4 text-gray-700 text-center text-2xl">{subtext}</p>}
       </div>
       <MasterContainer>{children}</MasterContainer>
     </div>

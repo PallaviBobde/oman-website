@@ -1,4 +1,5 @@
 import React from "react";
+import { FaHandshake } from "react-icons/fa";
 
 const BgImageText = () => {
   return (
@@ -10,6 +11,10 @@ const BgImageText = () => {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="text-xl absolute right-0 m-5 py-2 px-5 font-semibold text-[#0C7D48] bg-white rounded-[20px] flex items-center">
+        <FaHandshake className="mr-3" />
+        Partner Dashboard
+      </div>
       <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
         <span className="bg-[#ffffff40] text-white mb-2 border-white border w-fit rounded-[30px] p-3 font-semibold text-[20px]">
           Help tackle the climate crisis

@@ -9,7 +9,7 @@ const MasterContainer = ({  heading,children }) => {
           {heading}
         </div>
       )}
-      <div className="flex flex-wrap justify-center">{children}</div>
+      <div className="flex flex-wrap justify-around">{children}</div>
     </div>
   );
 };

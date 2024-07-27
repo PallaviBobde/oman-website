@@ -39,7 +39,7 @@ export default function Page() {
       </ImageWithContent>
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/07/Plant-for-the-Planet-Global-Board-2024-25.png"
-        heading="Global Board of the Plant-for-the-Planet Initiative"
+        heading="Mission and Vission"
         subheading="Plant-for-the-Planet thrives on the most outstanding children and young people. To spread the word, we have a Global Board with young leaders around the world. They are committed to climate justice and tree planting on a voluntary basis. The Global Board is elected every year."
         buttonText="Get to know our Global Board members"
         background
@@ -48,18 +48,16 @@ export default function Page() {
         heading="Patrons"
         subtext="We would like to thank our patrons who have accompanied Plant-for-the-Planet from the very beginning."
       >
-        <>
           <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+            imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
             heading={"Prince Albert II of Monaco"}
             subtext={"Patron"}
           />
           <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+            imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
             heading={"Prince Albert II of Monaco"}
             subtext={"Patron"}
           />
-        </>
       </HeadingSubtextDataContainer>
 
       <h2 className="text-4xl font-bold mt-20 text-gray-700 text-center">
@@ -228,6 +226,8 @@ export default function Page() {
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Dr. Josep Santacreu"}
             subtext={"President of the Fundación Plant-for-the-Planet España"}
+            btnLink=""
+            btnText="Annual Reports"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -235,6 +235,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Annual Reports"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -242,11 +244,15 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Annual Reports"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Dr. Josep Santacreu"}
             subtext={"President of the Fundación Plant-for-the-Planet España"}
+            btnLink=""
+            btnText="Annual Reports"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -254,6 +260,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Annual Reports"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -261,6 +269,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Annual Reports"
           />
         </>
       </HeadingSubtextDataContainer>
@@ -304,24 +314,32 @@ export default function Page() {
             heading={"Dr. Leland Werden"}
             subtext={"Chief Scientific Advisor"}
             margin
+            btnLink=""
+            btnText="Google Scholar"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Dr. Leland Werden"}
             subtext={"Chief Scientific Advisor"}
             margin
+            btnLink=""
+            btnText="Google Scholar"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Dr. Leland Werden"}
             subtext={"Chief Scientific Advisor"}
             margin
+            btnLink=""
+            btnText="Google Scholar"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Dr. Leland Werden"}
             subtext={"Chief Scientific Advisor"}
             margin
+            btnLink=""
+            btnText="Google Scholar"
           />
         </>
       </HeadingSubtextDataContainer>
@@ -330,7 +348,6 @@ export default function Page() {
         heading="Educational Advisory Board"
         subtext="The Educational Advisory Board evaluates, provides consultation on, and helps to further develop our educational work with children."
       >
-        <>
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Evelyn Araripe"}
@@ -338,14 +355,8 @@ export default function Page() {
               "Educational Advisor"
             }
             margin
-          />
-          <PatronCard
-            // imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            // heading={"Evelyn Araripe"}
-            // subtext={
-            //   "Educational Advisor"
-            // }
-            margin
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -354,14 +365,8 @@ export default function Page() {
               "Educational Advisor"
             }
             margin
-          />
-          <PatronCard
-            // imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            // heading={"Evelyn Araripe"}
-            // subtext={
-            //   "Educational Advisor"
-            // }
-            margin
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -370,14 +375,8 @@ export default function Page() {
               "Educational Advisor"
             }
             margin
-          />
-           <PatronCard
-            // imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            // heading={"Evelyn Araripe"}
-            // subtext={
-            //   "Educational Advisor"
-            // }
-            margin
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -386,8 +385,9 @@ export default function Page() {
               "Educational Advisor"
             }
             margin
+            btnLink=""
+            btnText="Linkedin"
           />
-        </>
       </HeadingSubtextDataContainer>
 
        <HeadingSubtextDataContainer
@@ -402,6 +402,8 @@ export default function Page() {
               ""
             }
             margin
+            btnLink=""
+            btnText="Linkedin"
           />
         </>
       </HeadingSubtextDataContainer>

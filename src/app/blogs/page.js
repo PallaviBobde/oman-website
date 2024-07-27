@@ -8,97 +8,73 @@ export default function Page() {
       imageUrl:
         "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
       date: "July 16, 2024",
-      heading: "First Blog Post",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
-    {
+   {
       imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
+        "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
+      date: "July 16, 2024",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
     {
       imageUrl:
         "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
       date: "July 16, 2024",
-      heading: "First Blog Post",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
-    },
-    {
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
-      description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
     {
       imageUrl:
         "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
       date: "July 16, 2024",
-      heading: "First Blog Post",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
-    {
+     {
       imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
+        "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
+      date: "July 16, 2024",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
+    },
+   {
+      imageUrl:
+        "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
+      date: "July 16, 2024",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
     {
       imageUrl:
         "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
       date: "July 16, 2024",
-      heading: "First Blog Post",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
-    {
+     {
       imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
+        "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
+      date: "July 16, 2024",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
     {
       imageUrl:
         "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
       date: "July 16, 2024",
-      heading: "First Blog Post",
+      heading: "First Blog Post First Blog PostFirst Blog Post First Blog Post First Blog PostFirst Blog Post ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
-    },
-    {
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
-      description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
-    },
-    {
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2023/09/05/10/00/plant-8234767_1280.jpg",
-      date: "July 16, 2024",
-      heading: "First Blog Post",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui...",
-    },
-    {
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2022/12/18/17/19/flower-7663912_1280.jpg",
-      date: "July 17, 2024",
-      heading: "Second Blog Post",
-      description:
-        "Vestibulum posuere justo et venenatis iaculis. Duis sed tempor mi. Nulla vel ante id...",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui tibulum posuere justo et venenatis iaculise id ...",
     },
   ];
 
