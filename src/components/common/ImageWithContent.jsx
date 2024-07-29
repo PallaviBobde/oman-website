@@ -15,17 +15,17 @@ const ImageWithContent = ({
   btnLink=""
 }) => {
   // Determine flex direction based on imageOnLeft prop
-  const flexDirection = imageOnLeft ? "flex-row" : "flex-row-reverse";
+  const flexDirection = imageOnLeft ? "flex-col md:flex-row " : "flex-col md:flex-row-reverse";
 
   return (
     <div
-      className={`flex ${flexDirection} items-center justify-center py-20 px-4 md:px-12 ${
-        background && "bg-[#F7FBF5]"
+      className={`flex  ${flexDirection} items-center justify-center py-20 px-4 md:px-12 ${
+        background && "bg-[#F7FBF5] "
       } ${bgColor && `bg-[${bgColor}]`}`}
     >
       {/* Image Section */}
       {imageUrl && (
-        <div className="w-full md:w-1/2 relative">
+        <div className="w-full md:w-1/2 relative mb-5 ">
           <img
             src={imageUrl}
             alt="Content Image"
@@ -46,7 +46,9 @@ const ImageWithContent = ({
           <p className="text-lg mb-4 text-gray-700">{subheading}</p>
         )}
         {children && children}
-        {buttonText && <ButtonWithArrow buttonText={buttonText} btnLink={btnLink} />}
+        {buttonText && (
+          <ButtonWithArrow buttonText={buttonText} btnLink={btnLink} />
+        )}
       </div>
     </div>
   );
