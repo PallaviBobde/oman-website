@@ -29,7 +29,7 @@ const AcademyForm = () => {
         </div>
 
         <h1 className="text-2xl  r mb-4 border-t py-5">
-          Participant's Contact
+          Participant&apos;s Contact
         </h1>
         <div className="flex flex-col">
           <label htmlFor="dropdown">Title: *</label>
@@ -92,7 +92,7 @@ const AcademyForm = () => {
 
         <div className="flex mt-5">
           <div className="w-[48%] mr-5">
-            <label htmlFor="Child's first name">Child's first name:</label>
+            <label htmlFor="Child's first name">Child&apos;s first name:</label>
             <input
               type="email"
               id="email"
