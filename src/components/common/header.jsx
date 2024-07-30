@@ -60,51 +60,51 @@ export default function Header() {
                 className="mr-5"
               />
             </a>
-            <div className="flex">
+            <div className="flex text-gray-500">
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5   flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/"
               >
                 <FaHome className="mr-1 text-[#60AB32] text-[24px]" />
                 Home
               </a>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/platform"
               >
                 <FaChartBar className="mr-1 text-[#60AB32] text-[24px]" />
                 Platform
               </a>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5   flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/about-us"
               >
                 <FaInfoCircle className="mr-1 text-[#60AB32] text-[24px]" />
                 About us
               </a>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5   flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/statics-and-records"
               >
                 <FaChartBar className="mr-1 text-[#60AB32] text-[24px]" />
                 Statics and Records
               </a>
               <a
-                className="mr-5 font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5 flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/projects"
               >
                 <FaProjectDiagram className="mr-1 text-[#60AB32] text-[24px]" />
                 Projects
               </a>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/live-and-podcasts"
               >
                 <FaPodcast className="mr-1 text-[#60AB32] text-[24px]" /> Live
                 and podcasts
               </a>
               <div
-                className="mr-5 font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32] relative"
+                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32] relative"
                 // href="/academy"
                 onMouseEnter={() => handleMouseEnter("academy")}
                 onMouseLeave={() => handleMouseLeave("academy")}
@@ -135,14 +135,14 @@ export default function Header() {
                 )}
               </div>
               <a
-                className="mr-5 hover:text-gray-900 font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32]"
+                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32]"
                 href="/support-us"
               >
                 <FaHandsHelping className="mr-1 text-[#60AB32] text-[24px]" />
                 Requests
               </a>
               <p
-                className="mr-5 hover:text-gray-900 font-semibold flex flex-col items-center text-[14px] hover:text-[#60AB32] relative"
+                className="mr-5 flex flex-col items-center text-[12px] hover:text-[#60AB32] relative"
                 // href="/support-us"
                 onMouseEnter={() => handleMouseEnter("support")}
                 onMouseLeave={() => handleMouseLeave("support")}
@@ -192,14 +192,14 @@ export default function Header() {
                 )}
               </p>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px  hover:text-[#60AB32]"
+                className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#60AB32]"
                 href="/tracking"
               >
                 <FaTree className="mr-1 text-[#60AB32] text-[24px]" />
                 Tracking
               </a>
               <a
-                className="mr-5  font-semibold flex flex-col items-center text-[14px]  hover:text-[#60AB32]"
+                className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#60AB32]"
                 href="/blogs"
               >
                 <FaBlog className="mr-1 text-[#60AB32] text-[24px]" /> Blogs
