@@ -75,7 +75,7 @@ export default function Page() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="applicantName" className="block mb-1">Applicant's Name *</label>
+          <label htmlFor="applicantName" className="block mb-1">Applicant&apos;s Name *</label>
           <input
             id="applicantName"
             type="text"
@@ -119,15 +119,15 @@ export default function Page() {
             <option value="promoteSocialResponsibility">Promote social responsibility</option>
             <option value="acquireMarketShare">Acquire a larger market share (new customers)</option>
             <option value="increaseSales">Increase Sales</option>
-            <option value="introduction">Introduction to the company's products and services</option>
-            <option value="motivatingEmployees">Motivating the facility's employees</option>
+            <option value="introduction">Introduction to the company&apos;s products and services</option>
+            <option value="motivatingEmployees">Motivating the facility&apos;s employees</option>
             <option value="targetingSegment">Targeting a specific segment of customers</option>
             <option value="developBusinessRelationships">Develop business relationships</option>
           </select>
         </div>
 
         <div className="mb-4">
-          <label htmlFor="addLogo" className="block mb-1">Would you like to add your facility logo to the platform's Sponsor Partners page? *</label>
+          <label htmlFor="addLogo" className="block mb-1">Would you like to add your facility logo to the platform&apos;s Sponsor Partners page? *</label>
           <select
             id="addLogo"
             className="w-full p-2 border border-gray-300 rounded"
@@ -152,7 +152,7 @@ export default function Page() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="annualBudget" className="block mb-1">What is the facility's annual budget allocated for commercial sponsorships? *</label>
+          <label htmlFor="annualBudget" className="block mb-1">What is the facility&apos;s annual budget allocated for commercial sponsorships? *</label>
           <select
             id="annualBudget"
             className="w-full p-2 border border-gray-300 rounded"
