@@ -29,7 +29,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="mb-2">
-              <a className="text-gray-600 hover:text-gray-800" href="">
+              <a className="text-gray-600 hover:text-gray-800" href="/signup">
                 Sign In{" "}
               </a>
             </li>
@@ -52,16 +52,16 @@ export default function Footer() {
             </h2>
             <nav class="list-none mb-10">
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800 mt-10">Contact</a>
+                <a class="text-gray-600 hover:text-gray-800 mt-10" href="/contact-us">Contact</a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">About Us</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/about-us">About Us</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">Annual Reports</a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">Blog</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/blogs">Blog</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">Press</a>
@@ -83,7 +83,7 @@ export default function Footer() {
             </h2>
             <nav class="list-none mb-10">
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800 mt-10">Academies</a>
+                <a class="text-gray-600 hover:text-gray-800 mt-10" href="/youth-and-children">Academies</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">Ideas & Tools</a>
@@ -110,7 +110,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">Volunteers</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/volunteers">Volunteers</a>
               </li>
             </nav>
           </div>
@@ -137,7 +137,7 @@ export default function Footer() {
                 <a class="text-gray-600 hover:text-gray-800">FireAlert</a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">Donate</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/donation">Donate</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">PlanetCash</a>
@@ -151,7 +151,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">Standards</a>
+                <a class="text-gray-600 hover:text-gray-800" href="/standards">Standards</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">Verification</a>
@@ -211,7 +211,7 @@ export default function Footer() {
                 <a class="text-gray-600 hover:text-gray-800">My Forest </a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">
+                <a class="text-gray-600 hover:text-gray-800" href="/sustainable-events">
                   Sustainable Events
                 </a>
               </li>
@@ -228,7 +228,7 @@ export default function Footer() {
             </h2>
             <nav class="list-none mb-10">
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800 mt-10">Donate</a>
+                <a class="text-gray-600 hover:text-gray-800 mt-10" href="/donation">Donate</a>
               </li>
               <li className="mb-2">
                 <a class="text-gray-600 hover:text-gray-800">Membership</a>
@@ -240,8 +240,8 @@ export default function Footer() {
                 <a class="text-gray-600 hover:text-gray-800">Bank Accounts</a>
               </li>
               <li className="mb-2">
-                <a class="text-gray-600 hover:text-gray-800">
-                  FireAlertEndowment
+                <a class="text-gray-600 hover:text-gray-800" href="/endowent">
+                  Endowment
                 </a>
               </li>
               <li className="mb-2">

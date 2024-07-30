@@ -5,6 +5,7 @@ import ImageWithContent from "@/components/common/ImageWithContent";
 import MasterContainer from "@/components/common/MasterContainer";
 import { PatronCard } from "@/components/common/RoundImageAndText";
 import BgImageText from "@/components/partners/TopImageWithText";
+import UpcomingAcademies from "@/components/youth-and-children/upcomingacademies";
 
 export default function Page() {
   return (
@@ -27,17 +28,14 @@ export default function Page() {
         </div>
       </div>
 
-      <MasterContainer>
-        <div
-          className={`flex  items-center justify-center py-20 px-4 md:px-12 `}
-        >
-          <img
-            src="https://www.plant-for-the-planet.org/wp-content/uploads/2022/01/Rectangle-7-1.png"
-            alt="Content Image"
-            className="w-[50%] m-10"
-            // className={`${rounded && "rounded-[20px]"}  z-20 relative`}
-          />
-          <div className={`w-full md:w-3/4 px-4 md:px-8`}>
+
+       <ImageWithContent
+        imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2022/01/Rectangle-7-1.png"
+        imageOnLeft
+        border
+        rounded
+      >
+        <div className={`w-full px-4 md:px-8`}>
             <h2 className="text-4xl font-bold mb-10 text-gray-800">
               Academies
             </h2>
@@ -81,8 +79,9 @@ export default function Page() {
               </svg>
             </div>
           </div>
-        </div>
-      </MasterContainer>
+      </ImageWithContent>
+
+      <UpcomingAcademies/>
 
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/05/Plant-for-the-Planet-Ambassador-Girl.png"

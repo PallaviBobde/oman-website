@@ -104,7 +104,7 @@ export default function Header() {
                 and podcasts
               </a>
               <div
-                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32] relative"
+                className="mr-5  flex flex-col items-center text-[12px] hover:text-[#60AB32] relative cursor-pointer"
                 // href="/academy"
                 onMouseEnter={() => handleMouseEnter("academy")}
                 onMouseLeave={() => handleMouseLeave("academy")}
@@ -114,7 +114,7 @@ export default function Header() {
                 {academyMenu && (
                   <div className="absolute top-10 bg-white flex flex-col text-gray-500 z-40 font-normal text-[12px] border rounded w-[150px] ">
                     <a
-                      href="/partner-with-us"
+                      href="/youth-and-children"
                       className="hover:bg-[#60AB3240] border-b px-2"
                     >
                       Youth and Children&apos;s
@@ -142,7 +142,7 @@ export default function Header() {
                 Requests
               </a>
               <p
-                className="mr-5 flex flex-col items-center text-[12px] hover:text-[#60AB32] relative"
+                className="mr-5 flex flex-col items-center text-[12px] hover:text-[#60AB32] relative cursor-pointer"
                 // href="/support-us"
                 onMouseEnter={() => handleMouseEnter("support")}
                 onMouseLeave={() => handleMouseLeave("support")}
@@ -158,7 +158,7 @@ export default function Header() {
                       Partner with us
                     </a>
                     <a
-                      href="/donate-for-research-park"
+                      href="/donation"
                       className="hover:bg-[#60AB3240] border-b px-2"
                     >
                       Donate for the Research Park
@@ -167,7 +167,6 @@ export default function Header() {
                       href="/endowent"
                       className="hover:bg-[#60AB3240] border-b px-2"
                     >
-                      {" "}
                       Endowent
                     </a>
                     <a

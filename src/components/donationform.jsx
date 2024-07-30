@@ -47,7 +47,7 @@ const DonationForm = () => {
           <div className="flex justify-end mb-4 text-[14px] text-[#68B030]">
             <a href="/login">Login & Continue</a>
           </div>
-          <div className="flex justify-around mb-4 bg-gray-200 p-2 rounded-[25px]">
+          {/* <div className="flex justify-around mb-4 bg-gray-200 p-2 rounded-[25px]">
             <button
               onClick={() => setInterval("once")}
               className={`py-2 px-4 rounded-[25px] w-[100%] ${
@@ -78,7 +78,7 @@ const DonationForm = () => {
             >
               Yearly
             </button>
-          </div>
+          </div> */}
           <div className="flex justify-around mb-4 flex-wrap">
             {[10, 20, 50, 100].map((price) => (
               <div
