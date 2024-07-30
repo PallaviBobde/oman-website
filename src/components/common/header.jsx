@@ -215,6 +215,12 @@ export default function Header() {
           </nav>
           <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
             <a
+              className=" font-semibold inline-flex items-center  border-0  px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-gradient-to-b from-[#60AB32] to-[#0C7D48] text-[#fff]  text-[14px]"
+              href="/sponsor-form"
+            >
+              Register as Sponsor
+            </a>
+            <a
               className="ml-5  font-semibold flex items-center text-[14px] border px-3 rounded-[20px] hover:text-[#60AB32]"
               href="/contact-us"
             >
