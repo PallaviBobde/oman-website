@@ -1,6 +1,7 @@
 // components/ImageSlider.js
 import { useState } from "react";
 import styles from "./ImageSlider.module.css";
+import { FaArrowLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,12 +28,12 @@ const ImageSlider = ({ images }) => {
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
         >
           <button className={styles.leftArrow} onClick={prevSlide}>
-            ❮
+            <FaChevronLeft />
           </button>
           <button className={styles.rightArrow} onClick={nextSlide}>
-            ❯
+            <FaChevronRight />
           </button>
-          <h1 className="text-4xl text-white font-bold w-1/2   pl-20  py-40 text-center"> 
+          <h1 className="text-4xl text-white font-bold w-1/2   pl-20  py-40 text-center">
             The world had 3 trillion trees. But do you know where they are?
           </h1>
         </div>

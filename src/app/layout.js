@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         {children}
-        <MasterContainer>
+        <div className="flex justify-center">
           <Image
               src="/main-logo.png"
               width={150}
@@ -48,9 +48,9 @@ export default function RootLayout({ children }) {
             height={100}
             className="m-10"
           />
-        </MasterContainer>
+        </div>
         <ImageWithContent>
-          <p className="text-lg mb-4 text-gray-700 mx-20 mt-[-80px]">
+          <p className="text-[20px] mb-4 text-gray-700 mx-20 mt-[-80px]">
             <span className="text-[#209653]">Plant-for-the-Planet</span> is a
             global movement empowering young people and organizations to restore
             forest ecosystems and fight for climate justice. To do so, we{" "}
@@ -59,10 +59,10 @@ export default function RootLayout({ children }) {
             <span className="text-[#209653]">conduct restoration research</span>
             ,{" "}
             <span className="text-[#209653]">
-              provide`` free software tools
+              provide free software tools
             </span>{" "}
             and <span className="text-[#209653]">restoration advice</span> for
-            organizations around the world. We believe that we need to protect
+            organizations around the world. <br/><br/> We believe that we need to protect
             the world’s three trillion trees and bring back a further one
             trillion trees
           </p>

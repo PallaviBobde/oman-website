@@ -3,7 +3,7 @@
 import PropTypes from "prop-types";
 import ButtonWithArrow from "./ButtonWithArrow";
 
-const VideoContainer = ({ videos, heading, subheading }) => {
+const VideoContainer = ({ videos, heading, subheading, noText }) => {
   return (
     <div className="w-full bg-[#F7FBF4] flex flex-col items-center justify-center py-20">
       {heading && (
@@ -16,7 +16,9 @@ const VideoContainer = ({ videos, heading, subheading }) => {
         {videos.map((link, index) => (
           <div
             key={index}
-            className="flex-1 min-w-[400px] max-w-[calc(25%-1rem)] h-[450px] text-gray-600"
+            className={`flex-1 min-w-[400px] max-w-[calc(25%-1rem)] ${
+              noText ? "h-[300px]" : "h-[450px]"
+            } text-gray-600`}
           >
             <iframe
               width="100%"
@@ -27,12 +29,20 @@ const VideoContainer = ({ videos, heading, subheading }) => {
               allowFullScreen
               className="flex-1 min-w-[400px] max-w-[calc(25%-1rem)] h-[300px] bg-gray-500"
             ></iframe>
-            <p className="font-bold mt-3">Title</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus enim neque sit excepturi corporis explicabo aspernatur laborum officiis iusto fugit!</p>
+            {!noText && (
+              <>
+                <p className="font-bold mt-3">Title</p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus enim neque sit excepturi corporis explicabo
+                  aspernatur laborum officiis iusto fugit!
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>
-      <ButtonWithArrow buttonText="Find us on YouTube" />
+      {/* <ButtonWithArrow buttonText="Find us on YouTube" /> */}
     </div>
   );
 };
