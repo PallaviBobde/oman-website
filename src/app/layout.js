@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           />
         </div>
         <ImageWithContent>
-          <p className="text-[20px] mb-4 text-gray-700 mx-20 mt-[-80px]">
+          <p className="text-[20px] mb-4 text-gray-700 mx-20 mt-[-80px] px-10">
             <span className="text-[#209653]">Plant-for-the-Planet</span> is a
             global movement empowering young people and organizations to restore
             forest ecosystems and fight for climate justice. To do so, we{" "}

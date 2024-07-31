@@ -94,8 +94,9 @@ const PartnersTab = () => {
         buttonText={cardData[activeTab].buttonText}
         imageOnLeft
         rounded
-        bgColor="#F5F3ED"
         textWhite
+         background
+          bgColor="#F5F3ED"
       />
       </div>
         )

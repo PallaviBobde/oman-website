@@ -83,6 +83,8 @@ export default function Home() {
           imageOnLeft
           border
           rounded
+          background
+          bgColor="#F5F3ED"
         >
           <h2 className="text-4xl font-bold mb-10 ">
             Climate Justice Ambassadors: We Make Ourselves Heard
@@ -97,17 +99,31 @@ export default function Home() {
           </p>
           <div className="flex justify-between items-center">
             <h2 className="text-xl font-bold  ">Upcoming academies</h2>
-            <ButtonWithArrow buttonText="All Academies" btnLink="/academies"/>
+            <ButtonWithArrow buttonText="All Academies" btnLink="/academies" />
           </div>
           <div className="flex">
-            <AcademyCard title="Hofheim a./Ts." date="2024-09-09" location="21508,Glinde, DE" language="Deutsch" whiteCard  />
-             <AcademyCard title="Hofheim a./Ts." date="2024-09-09" location="21508,Glinde, DE" language="Deutsch" whiteCard />
+            <AcademyCard
+              title="Hofheim a./Ts."
+              date="2024-09-09"
+              location="21508,Glinde, DE"
+              language="Deutsch"
+              whiteCard
+            />
+            <AcademyCard
+              title="Hofheim a./Ts."
+              date="2024-09-09"
+              location="21508,Glinde, DE"
+              language="Deutsch"
+              whiteCard
+            />
           </div>
-           <div className="flex justify-between">
-            <ButtonWithArrow buttonText="Join Us" btnLink="/academies"/>
-            <ButtonWithArrow buttonText="Ideas and tools" btnLink="/academies"/>
+          <div className="flex justify-between">
+            <ButtonWithArrow buttonText="Join Us" btnLink="/academies" />
+            <ButtonWithArrow
+              buttonText="Ideas and tools"
+              btnLink="/academies"
+            />
           </div>
-          
         </ImageWithContent>
       </div>
 
@@ -166,19 +182,19 @@ export default function Home() {
       />
       <div className="bg-[#F7FBF5]">
         <ImageWithContent
-        imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
-        heading="Partner with us!"
-        subheading="We want to work with you on your climate journey and mobilize your community for forest restoration."
-        rounded
-        background
-      >
-        <div className="flex">
-          <ButtonWithArrow buttonText="Partner with us"/>
-          <ButtonWithArrow buttonText="Sustainable events"/>
-        </div>
-      </ImageWithContent>
+          imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
+          heading="Partner with us!"
+          subheading="We want to work with you on your climate journey and mobilize your community for forest restoration."
+          rounded
+          background
+        >
+          <div className="flex">
+            <ButtonWithArrow buttonText="Partner with us" />
+            <ButtonWithArrow buttonText="Sustainable events" />
+          </div>
+        </ImageWithContent>
       </div>
-      
+
       <VideoContainer
         videos={videoLinks}
         heading="Latest videos"
