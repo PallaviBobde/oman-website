@@ -228,3 +228,6 @@ Back to the Roots: How Felix, Alina and Elly Inspire the Next Generation to Clim
 
 // [#60AB32]
 // [#0C7D48]
+
+
+// gray to green logo - #14A83F

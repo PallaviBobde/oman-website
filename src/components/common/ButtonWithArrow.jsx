@@ -5,7 +5,7 @@ const ButtonWithArrow = ({ buttonText,btnLink,btnWhite }) => {
   return (
     <a
       className={`flex items-center  py-2  text-${
-        btnWhite ? "[#ffffff]" : "[#68B030]"
+        btnWhite ? "[#ffffff]" : "[#14A83F]"
       } font-semibold rounded-lg focus:outline-none  hover:opacity-60`}
       href={btnLink}
       target="_blank"
