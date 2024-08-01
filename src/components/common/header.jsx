@@ -100,7 +100,7 @@ export default function Header() {
                 className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/about-us"
               >
-                <img src="/about-us.png" className="m-[-20px] w-[100px]" />
+                <img src="/About-us.png" className="m-[-20px] w-[100px]" />
                 About us
               </a>
               <a
@@ -117,7 +117,7 @@ export default function Header() {
                 className="mr-5 flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/projects"
               >
-                <img src="/projects.png" className="m-[-20px] w-[100px]" />
+                <img src="/Projects.png" className="m-[-20px] w-[100px]" />
                 Projects
               </a>
               <a
@@ -125,7 +125,7 @@ export default function Header() {
                 href="/live-and-podcasts"
               >
                 <img
-                  src="/LiveandPodcasts.png"
+                  src="/Liveandpodcasts.png"
                   className="m-[-40px] w-[100px]"
                 />{" "}
                 Live and podcasts
@@ -137,7 +137,7 @@ export default function Header() {
                 onMouseLeave={() => handleMouseLeave("academy")}
                 ref={academyMenuRef}
               >
-                <img src="/academy.png" className="m-[-20px] w-[100px]" />
+                <img src="/Academy.png" className="m-[-20px] w-[100px]" />
                 Academy
                 {academyMenu && (
                   // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
