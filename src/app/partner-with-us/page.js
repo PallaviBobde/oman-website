@@ -13,10 +13,10 @@ export default function Page() {
         <BgImageText />
         <div className="text-center text-gray-800 my-10 ">
           <div className="my-20">
-            <h1 className="font-bold text-5xl mx-20">
+            <h1 className="font-bold text-4xl mx-20 mb-5 text-gray-800">
               Let&apos;s make a difference together
             </h1>
-            <h2 className="text-bold text-xl mx-20">
+            <h2 className="text-bold text-xl mx-20 mb-[-40px]">
               Plant-for-the-Planet is a global movement fighting for climate
               justice. We work on solutions for the most urgent challenges in
               the field of ecosystem restoration. We empower children and young
@@ -26,40 +26,61 @@ export default function Page() {
             </h2>
           </div>
         </div>
-       
-         <div className="flex flex-wrap justify-center bg-[#F1FAF4]">
-        <img
-          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Youth-empowerment.png"
-          alt="Content Image"
-          className="w-[40vw] mx-5"
-        />
-        <img
-          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-tools.png"
-          alt="Content Image"
-          className="w-[40vw] mx-5"
-        />
-        <img
-          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-Advice.png"
-          alt="Content Image"
-          className="w-[40vw] mx-5"
-        />
-        <img
-          src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/The-Change-Choclate-e1716314445105.png"
-          alt="Content Image"
-          className="w-[40vw] mx-5"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2017/11/12/13/37/forest-2942477_1280.jpg"
-          alt="Content Image"
-          className="w-[85vw] m-5 h-[30vh] rounded-[20px] "
-        />
-      </div>
+
+        <div className="flex flex-wrap justify-center bg-[#F1FAF4]">
+          <div className="text-white relative">
+            <img
+              src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Youth-empowerment.png"
+              alt="Content Image"
+              className="w-[40vw] mx-5"
+            />
+            <div className="absolute top-20 left-10 z-20">
+              <h2 className="text-4xl font-bold">
+                Youth <br /> Empowerment
+              </h2>
+              <p className="text-xl">
+                children & youth to fight <br /> the climate crisis
+              </p>
+            </div>
+          </div>
+          <div className="text-white relative">
+            <img
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-tools.png"
+            alt="Content Image"
+            className="w-[40vw] mx-5"
+          />
+            <div className="absolute top-20 left-10 z-20">
+              <h2 className="text-4xl font-bold">
+                Restoration Tools
+              </h2>
+              <p className="text-xl">
+                to fund, restore, monitor & conserve 
+              </p>
+            </div>
+          </div>
+          
+          <img
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-Advice.png"
+            alt="Content Image"
+            className="w-[40vw] mx-5"
+          />
+          <img
+            src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/The-Change-Choclate-e1716314445105.png"
+            alt="Content Image"
+            className="w-[40vw] mx-5"
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2017/11/12/13/37/forest-2942477_1280.jpg"
+            alt="Content Image"
+            className="w-[85vw] m-5 h-[30vh] rounded-[20px] "
+          />
+        </div>
       </div>
 
       <div className="text-center text-gray-800 my-10">
-          <h1 className="font-bold text-5xl">Our Solutions</h1>
-          <h2 className="text-bold text-4xl">for Sustainable Companies</h2>
-        </div>
+        <h1 className="font-bold text-5xl">Our Solutions</h1>
+        <h2 className="text-bold text-4xl">for Sustainable Companies</h2>
+      </div>
 
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/My-Forest.png"
@@ -157,7 +178,7 @@ project-related cooperation"
         rounded
         imageOnLeft
         border
-         tag="Forest Software & Advice"
+        tag="Forest Software & Advice"
       >
         <p className="text-gray-700 text-[20px]">
           We need your support to provide cutting edge ecosystem restoration
@@ -173,8 +194,8 @@ project-related cooperation"
         buttonText="Tracer.eco"
         rounded
         border
-         tag="tracer.eco"
-         greenBtn
+        tag="tracer.eco"
+        greenBtn
       />
 
       <ImageWithContent
@@ -187,8 +208,8 @@ With a planet cash wallet, you can integrate trees into your business. Imagine g
         imageOnLeft
         border
         buttonText="PlanetCash"
-          tag="Next-level customer relations"
-          greenBtn
+        tag="Next-level customer relations"
+        greenBtn
       />
 
       <ImageWithContent
