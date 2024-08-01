@@ -256,7 +256,7 @@ export default function Header() {
                       className="hover:bg-[#14A83F40] p-5 flex"
                     >
                       <img
-                        src="/PartnerWithUs.png"
+                        src="/Partnerwithus.png"
                         className="m-[-40px] w-[100px] mr-[-30px]"
                       />
                       Partner with us
