@@ -17,10 +17,10 @@ export const  PatronCard = ({ imageUrl, heading, subtext,margin,btnLink,btnText 
         />
       </div>
       <div className="text-center mt-4">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-3">{heading}</h2>
-        <p className="text-gray-600 text-[20px]">{subtext}</p>
+        <h2 className="text-3xl font-semibold text-gray-700 mb-3">{heading}</h2>
+        <p className="text-gray-700 text-[20px]">{subtext}</p>
         {!!btnText && (
-          <a href={btnLink} className="text-[#60AB32] flex justify-center items-center font-semibold">
+          <a href={btnLink} className="text-[#60AB32] flex justify-center items-center font-semibold text-[20px]">
             {btnText}
             <FaExternalLinkAlt className='ml-2' />
           </a>

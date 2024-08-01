@@ -6,11 +6,11 @@ const BlogCard = ({ imageUrl, date, heading, description }) => {
       <img
         src={imageUrl}
         alt={heading}
-        className="w-full h-52 object-cover object-center"
+        className="w-full h-[250px] object-cover object-center"
       />
       <div className="p-4">
-        <p className="text-gray-500 text-sm">{date}</p>
-        <h2 className="text-xl font-semibold mt-2 text-gray-800">{heading}</h2>
+        <p className="text-gray-400 ">{date}</p>
+        <h2 className="text-xl font-bold mt-2 text-gray-900">{heading}</h2>
         <p className="text-gray-600 mt-2">{description}</p>
       </div>
     </div>

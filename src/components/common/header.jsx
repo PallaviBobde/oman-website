@@ -86,43 +86,49 @@ export default function Header() {
                 className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/"
               >
-                <FaHome className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/Home.png" className="m-[-20px] w-[100px]" />
                 Home
               </a>
               <a
                 className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/platform"
               >
-                <FaChartBar className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/Platform.png" className="m-[-20px] w-[100px]" />
                 Platform
               </a>
               <a
                 className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/about-us"
               >
-                <FaInfoCircle className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/about-us.png" className="m-[-20px] w-[100px]" />
                 About us
               </a>
               <a
                 className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/statics-and-records"
               >
-                <FaChartBar className="mr-1 text-[#14A83F] text-[24px]" />
+                <img
+                  src="/Statics&Records.png"
+                  className="m-[-40px] w-[100px]"
+                />
                 Statics and Records
               </a>
               <a
                 className="mr-5 flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/projects"
               >
-                <FaProjectDiagram className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/projects.png" className="m-[-20px] w-[100px]" />
                 Projects
               </a>
               <a
                 className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/live-and-podcasts"
               >
-                <FaPodcast className="mr-1 text-[#14A83F] text-[24px]" /> Live
-                and podcasts
+                <img
+                  src="/LiveandPodcasts.png"
+                  className="m-[-40px] w-[100px]"
+                />{" "}
+                Live and podcasts
               </a>
               <div
                 className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F] cursor-pointer"
@@ -131,33 +137,65 @@ export default function Header() {
                 onMouseLeave={() => handleMouseLeave("academy")}
                 ref={academyMenuRef}
               >
-                <FaBook className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/academy.png" className="m-[-20px] w-[100px]" />
                 Academy
                 {academyMenu && (
-                  <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/08/01/06/51/people-1560569_1280.jpg"
-                      alt="academy"
-                      className="w-[300px] h-[200px] rounded-lg mr-10"
-                    />
-                    <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
-                      <p className=" text-gray-400 mb-3">ACADEMY</p>
-                      <a
-                        href="/youth-and-children"
-                        className="hover:bg-[#14A83F40] py-1"
-                      >
-                        👧 Youth and Children&apos;s
-                      </a>
-                      <a href="/blogs" className="hover:bg-[#14A83F40] py-1">
-                        🔬 Research and Experiments
-                      </a>
-                      <a
-                        href="/session-talk"
-                        className="hover:bg-[#14A83F40] py-1"
-                      >
-                        🎤 Session Talk
-                      </a>
-                    </div>
+                  // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
+                  //   <img
+                  //     src="https://cdn.pixabay.com/photo/2016/08/01/06/51/people-1560569_1280.jpg"
+                  //     alt="academy"
+                  //     className="w-[300px] h-[200px] rounded-lg mr-10"
+                  //   />
+                  //   <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
+                  //     <p className=" text-gray-400 mb-3">ACADEMY</p>
+                  //     <a
+                  //       href="/youth-and-children"
+                  //       className="hover:bg-[#14A83F40] py-1"
+                  //     >
+                  //       👧 Youth and Children&apos;s
+                  //     </a>
+                  //     <a href="/blogs" className="hover:bg-[#14A83F40] py-1">
+                  //       🔬 Research and Experiments
+                  //     </a>
+                  //     <a
+                  //       href="/session-talk"
+                  //       className="hover:bg-[#14A83F40] py-1"
+                  //     >
+                  //       🎤 Session Talk
+                  //     </a>
+                  //   </div>
+                  // </div>
+                  <div className="absolute top-24 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                    <a
+                      href="/youth-and-children"
+                      className="hover:bg-[#14A83F40] p-5 flex"
+                    >
+                      <img
+                        src="/YouthandChildren.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Youth and Children&apos;s
+                    </a>
+                    <a
+                      href="/blogs"
+                      className="hover:bg-[#14A83F40] p-5 flex items-center"
+                    >
+                      <img
+                        src="/Research&Experiments.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Research and Experiments
+                    </a>
+                    <a
+                      href="/session-talk"
+                      className="hover:bg-[#14A83F40]  p-5 flex"
+                    >
+                      <img
+                        src="/SessionTalk.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Session Talk
+                    </a>
                   </div>
                 )}
               </div>
@@ -165,7 +203,7 @@ export default function Header() {
                 className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
                 href="/support-us"
               >
-                <FaHandsHelping className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/Requests.png" className="m-[-20px] w-[100px]" />
                 Requests
               </a>
               <p
@@ -175,42 +213,104 @@ export default function Header() {
                 onMouseLeave={() => handleMouseLeave("support")}
                 ref={supportMenuRef}
               >
-                <FaHandsHelping className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/SupportUs.png" className="m-[-20px] w-[100px]" />
                 Support Us
                 {supportUsMenu && (
-                  <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
-                    <img
-                      src="https://www.plant-for-the-planet.org/wp-content/uploads/2022/10/20191015_ac_curitiba_rethoricalpractice_3.jpg"
-                      alt="academy"
-                      className="w-[300px] h-[200px] rounded-lg mr-10"
-                    />
-                    <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
-                      <p className=" text-gray-400 mb-3">SUPPORT US</p>
-                      <a
-                        href="/partner-with-us"
-                        className="hover:bg-[#14A83F40] px-2"
-                      >
-                        🤝 Partner with us
-                      </a>
-                      <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                        💼 Donate for the Research Park
-                      </a>
-                      <a
-                        href="/endowent"
-                        className="hover:bg-[#14A83F40]  px-2"
-                      >
-                        💖 Endowent
-                      </a>
-                      <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                        🎁 Donate
-                      </a>
-                      <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                        🌳 Donate Tree
-                      </a>
-                      <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                        🌾 Donate Land
-                      </a>
-                    </div>
+                  // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
+                  //   <img
+                  //     src="https://www.plant-for-the-planet.org/wp-content/uploads/2022/10/20191015_ac_curitiba_rethoricalpractice_3.jpg"
+                  //     alt="academy"
+                  //     className="w-[300px] h-[200px] rounded-lg mr-10"
+                  //   />
+                  //   <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
+                  //     <p className=" text-gray-400 mb-3">SUPPORT US</p>
+                  //     <a
+                  //       href="/partner-with-us"
+                  //       className="hover:bg-[#14A83F40] px-2"
+                  //     >
+                  //       🤝 Partner with us
+                  //     </a>
+                  //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
+                  //       💼 Donate for the Research Park
+                  //     </a>
+                  //     <a
+                  //       href="/endowent"
+                  //       className="hover:bg-[#14A83F40]  px-2"
+                  //     >
+                  //       💖 Endowent
+                  //     </a>
+                  //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
+                  //       🎁 Donate
+                  //     </a>
+                  //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
+                  //       🌳 Donate Tree
+                  //     </a>
+                  //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
+                  //       🌾 Donate Land
+                  //     </a>
+                  //   </div>
+                  // </div>)}
+                  <div className="absolute top-24 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                    <a
+                      href="/partner-with-us"
+                      className="hover:bg-[#14A83F40] p-5 flex"
+                    >
+                      <img
+                        src="/PartnerWithUs.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Partner with us
+                    </a>
+                    <a
+                      href="/donation"
+                      className="hover:bg-[#14A83F40] p-5 flex items-center"
+                    >
+                      <img
+                        src="/DonatefortheResearchPark.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />{" "}
+                      Donate for the Research Park
+                    </a>
+                    <a
+                      href="/endowent"
+                      className="hover:bg-[#14A83F40]  p-5 flex"
+                    >
+                      <img
+                        src="/Endowent.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />{" "}
+                      Endowent
+                    </a>
+                    <a
+                      href="/donation"
+                      className="hover:bg-[#14A83F40] p-5 flex"
+                    >
+                      <img
+                        src="/DonateIcon.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Donate
+                    </a>
+                    <a
+                      href="/donation"
+                      className="hover:bg-[#14A83F40] p-5 flex"
+                    >
+                      <img
+                        src="/DonateTree.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Donate Tree
+                    </a>
+                    <a
+                      href="/donation"
+                      className="hover:bg-[#14A83F40] p-5 flex"
+                    >
+                      <img
+                        src="/DonateLand.png"
+                        className="m-[-40px] w-[100px] mr-[-30px]"
+                      />
+                      Donate Land
+                    </a>
                   </div>
                 )}
               </p>
@@ -218,14 +318,14 @@ export default function Header() {
                 className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#14A83F]"
                 href="/tracking"
               >
-                <FaTree className="mr-1 text-[#14A83F] text-[24px]" />
+                <img src="/Tracking.png" className="m-[-20px] w-[100px]" />
                 Tracking
               </a>
               <a
                 className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#14A83F]"
                 href="/blogs"
               >
-                <FaBlog className="mr-1 text-[#14A83F] text-[24px]" /> Blogs
+                <img src="/Blogs.png" className="m-[-20px] w-[100px]" /> Blogs
               </a>
             </div>
 
@@ -233,7 +333,10 @@ export default function Header() {
               className="ml-3 font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px]"
               href="/donation"
             >
-              <FaDonate className="mr-1" />
+              <img
+                src="/Donate.png"
+                className="m-[-40px] mr-[-30px] w-[100px]"
+              />
               Donate
             </a>
           </nav>

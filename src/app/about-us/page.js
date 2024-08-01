@@ -8,7 +8,8 @@ import { PatronCard } from "@/components/common/RoundImageAndText";
 export default function Page() {
   return (
     <>
-      <ImageWithContent
+    <div className="py-10 bg-[#F7FBF5]">
+<ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2021/05/header_tem_site_monaco.jpg"
         heading="About Plant-for-the-Planet Organization"
         rounded
@@ -37,9 +38,11 @@ export default function Page() {
           by a common vision.
         </p>
       </ImageWithContent>
+    </div>
+      
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/07/Plant-for-the-Planet-Global-Board-2024-25.png"
-        heading="Mission and Vission"
+        heading="Mission and Vision"
         subheading="Plant-for-the-Planet thrives on the most outstanding children and young people. To spread the word, we have a Global Board with young leaders around the world. They are committed to climate justice and tree planting on a voluntary basis. The Global Board is elected every year."
         buttonText="Get to know our Global Board members"
         background
@@ -80,7 +83,7 @@ export default function Page() {
         </p>
       </ImageWithContent>
 
-      <MasterContainer heading={"Members"}>
+      <div className="flex flex-wrap justify-center">
         <FlipCard
           frontText="Centered Text"
           frontSubheading="Subheading"
@@ -144,7 +147,28 @@ export default function Page() {
           backText="Some additional text goes here."
           imageUrl="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg"
         />
-      </MasterContainer>
+        <FlipCard
+          frontText="Centered Text"
+          frontSubheading="Subheading"
+          backTitle="Back Side Title"
+          backText="Some additional text goes here."
+          imageUrl="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg"
+        />
+        <FlipCard
+          frontText="Centered Text"
+          frontSubheading="Subheading"
+          backTitle="Back Side Title"
+          backText="Some additional text goes here."
+          imageUrl="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg"
+        />
+        <FlipCard
+          frontText="Centered Text"
+          frontSubheading="Subheading"
+          backTitle="Back Side Title"
+          backText="Some additional text goes here."
+          imageUrl="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg"
+        />
+      </div>
 
       <HeadingSubtextDataContainer
         heading="Foundation Council"
@@ -158,6 +182,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -165,6 +191,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -172,6 +200,8 @@ export default function Page() {
             subtext={
               "Chairman of the Foundation Council of the Plant-for-the-Planet Foundation"
             }
+            btnLink=""
+            btnText="Linkedin"
           />
         </>
       </HeadingSubtextDataContainer>
@@ -188,6 +218,8 @@ export default function Page() {
               "Chairman of the Board of Directors of the Plant-for-the-Planet Foundation"
             }
             margin
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -196,6 +228,8 @@ export default function Page() {
               "Chairman of the Board of Directors of the Plant-for-the-Planet Foundation"
             }
             margin
+            btnLink=""
+            btnText="Linkedin"
           />
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
@@ -283,7 +317,7 @@ export default function Page() {
             <h2 className="text-4xl font-bold mb-10 text-gray-800">
               Restoration Team in Yucatán
             </h2>
-            <p className="text-lg mb-4 text-gray-700 text-[20px]">
+            <p className=" mb-4 text-gray-700 text-[20px]">
               <span className="text-[#209653]">
                 Dr. Raúl Negrete leads Plant-for-the-Planet A.C. (Mexico)
               </span>{" "}
@@ -302,7 +336,6 @@ export default function Page() {
           />
         </div>
       </MasterContainer>
-
       <HeadingSubtextDataContainer
         heading="Scientific Advisors"
         subtext="Moreover, the activities of the Foundation are guided by a Scientific Advisory Board."

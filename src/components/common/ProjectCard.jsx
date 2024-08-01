@@ -1,6 +1,7 @@
 // components/ProjectCard.js
 
 import Image from "next/image";
+import ProgressBar from "./ProgressBar";
 
 const ProjectCard = ({
   topImage,
@@ -25,6 +26,7 @@ const ProjectCard = ({
           <p>{subText}</p>
         </div>
       </div>
+      <ProgressBar progress={30} />
       <div className="p-4 flex justify-between items-center">
         <div>
           <p className="font-bold"> {numberOfTrees}</p>
@@ -33,9 +35,9 @@ const ProjectCard = ({
           </p>
         </div>
 
-        <button class="font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base mt-4 md:mt-0 bg-gradient-to-b from-[#60AB32] to-[#0C7D48] text-[#fff]">
+        <a class="font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base mt-4 md:mt-0 bg-gradient-to-b from-[#60AB32] to-[#0C7D48] text-[#fff]" href="/donation">
           Donate
-        </button>
+        </a>
       </div>
       <div className="bg-[#E1EFD8] text-center p-2 text-[14px]">
         <p>By Community Forest International</p>

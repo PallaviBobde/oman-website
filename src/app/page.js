@@ -84,7 +84,6 @@ export default function Home() {
           border
           rounded
           background
-          bgColor="#F5F3ED"
         >
           <h2 className="text-4xl font-bold mb-10 ">
             Climate Justice Ambassadors: We Make Ourselves Heard
@@ -99,7 +98,7 @@ export default function Home() {
           </p>
           <div className="flex justify-between items-center">
             <h2 className="text-xl font-bold  ">Upcoming academies</h2>
-            <ButtonWithArrow buttonText="All Academies" btnLink="/academies" />
+            <ButtonWithArrow buttonText="All Academies" btnLink="/youth-and-children" />
           </div>
           <div className="flex">
             <AcademyCard
@@ -118,11 +117,11 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-between">
-            <ButtonWithArrow buttonText="Join Us" btnLink="/academies" />
-            <ButtonWithArrow
+            <ButtonWithArrow buttonText="Join Us" btnLink="/youth-and-children" />
+            {/* <ButtonWithArrow
               buttonText="Ideas and tools"
               btnLink="/academies"
-            />
+            /> */}
           </div>
         </ImageWithContent>
       </div>
@@ -132,7 +131,7 @@ export default function Home() {
         heading="Why the world needs a trillion more trees!"
         subheading="The world currently has three trillion trees and has space for a trillion more. Trees are one of the most powerful tools that buy us time in the fight against the climate crisis. Only by restoring these forests, we will be able to keep temperature rise below 1.5°C."
         buttonText="Learn more about our vision"
-        btnLink="/partner-with-us"
+        btnLink="/support-doc.pdf"
         rounded
         border
         textbelowImage="The world's current 3 trillion trees in green. The potential for a further 1 trillion trees in yellow."
@@ -180,20 +179,19 @@ export default function Home() {
         imageOnLeft
         btnLink="/platform"
       />
-      <div className="bg-[#F7FBF5]">
         <ImageWithContent
           imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
           heading="Partner with us!"
           subheading="We want to work with you on your climate journey and mobilize your community for forest restoration."
           rounded
           background
+          partnerUsImg
         >
           <div className="flex">
             <ButtonWithArrow buttonText="Partner with us" />
             <ButtonWithArrow buttonText="Sustainable events" />
           </div>
         </ImageWithContent>
-      </div>
 
       <VideoContainer
         videos={videoLinks}
@@ -218,7 +216,7 @@ Back to the Roots: How Felix, Alina and Elly Inspire the Next Generation to Clim
         />{" "}
       </MasterContainer>
       <div className="flex items-center justify-center mb-20 mt-[-20px]">
-        <ButtonWithArrow buttonText="Read blogs here" />
+        <ButtonWithArrow buttonText="Read blogs here" btnLink="/blogs" />
       </div>
 
       <FaqAccordion />

@@ -39,7 +39,7 @@ export default function Page() {
       </ImageWithContent>
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/07/Plant-for-the-Planet-Global-Board-2024-25.png"
-        heading="Mission and Vission"
+        heading="Mission and Vision"
         subheading="Plant-for-the-Planet thrives on the most outstanding children and young people. To spread the word, we have a Global Board with young leaders around the world. They are committed to climate justice and tree planting on a voluntary basis. The Global Board is elected every year."
         buttonText="Get to know our Global Board members"
         background

@@ -1,5 +1,6 @@
 import ProjectCard from "@/components/common/ProjectCard";
 import Image from "next/image";
+import { FiFilter } from 'react-icons/fi';
 
 export default function Page() {
   // data/projects.js
@@ -89,6 +90,8 @@ export default function Page() {
 ];
 
   return (
+    <>
+     <FiFilter size={24}  className="mt-16 text-gray-500 absolute right-12" />
     <div className="w-full flex flex-wrap m-20">
     {projects.map((project) => (
         <ProjectCard
@@ -101,5 +104,6 @@ export default function Page() {
         />
       ))}
     </div>
+    </>
   );
 }

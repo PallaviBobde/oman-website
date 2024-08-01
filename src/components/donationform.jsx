@@ -31,10 +31,10 @@ const DonationForm = () => {
           alt="Plant for the Planet Logo"
           className="mb-[-30px]"
         />
-        <h1 className="text-2xl font-bold mt-4 text-center md:text-left">
+        <h1 className="text-2xl font-bold mt-4 text-center md:text-left text-white">
           Support Plant-for-the-Planet
         </h1>
-        <p className="mt-2 text-center md:text-left text-[12px]">
+        <p className="mt-2 text-center md:text-left text-[12px] text-white">
           With your donation, you help us expand our global network, train
           children at our academies to become Climate Justice Ambassadors, and
           plant more trees. Even with small contributions we can achieve a lot -

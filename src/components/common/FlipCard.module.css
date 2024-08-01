@@ -6,8 +6,8 @@
 
 .cardInner {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 400px;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
@@ -43,6 +43,7 @@
 
 .cardText h1 {
   margin: 0;
+  padding-top: 200px;
 }
 
 .cardText h2 {
@@ -52,4 +53,17 @@
 .cardText p {
   margin: 10px 0 0;
   font-size: 16px;
+}
+
+.cardTextBack h1 {
+  margin: 0;
+}
+
+.cardTextBack h2 {
+  margin: 10px 0 0;
+}
+
+.cardTextBack p {
+  margin: 10px 0 0;
+  font-size: 20px;
 }

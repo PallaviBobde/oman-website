@@ -12,37 +12,39 @@ const ImageWithContent = ({
   rounded = false,
   border = false,
   background = false,
-  bgColor = "#F7FBF5",
   btnLink = "",
   textWhite = false,
-  textbelowImage=null,
+  textbelowImage = null,
+  partnerUsImg = false,
+  tag,
+  greenBtn=false,
 }) => {
   // Determine flex direction based on imageOnLeft prop
   const flexDirection = imageOnLeft
     ? "flex-col md:flex-row "
     : "flex-col md:flex-row-reverse";
 
-    const imageRef = useRef(null);
-    const [imageDimensions, setImageDimensions] = useState({
-      width: 0,
-      height: 0,
-    });
+  const imageRef = useRef(null);
+  const [imageDimensions, setImageDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
 
-    useEffect(() => {
-      if (imageRef.current) {
-        setImageDimensions({
-          width: imageRef.current.clientWidth,
-          height: imageRef.current.clientHeight,
-        });
-      }
-    }, [imageUrl]);
+  useEffect(() => {
+    if (imageRef.current) {
+      setImageDimensions({
+        width: imageRef.current.clientWidth,
+        height: imageRef.current.clientHeight,
+      });
+    }
+  }, [imageUrl]);
 
   return (
     <div
       className={`flex  ${flexDirection} items-center justify-center py-20 px-4 md:px-12 bg-${
-        background ? bgColor:"white"
-      } 
-      }`}
+        background ? "[#F7FBF5]" : "transparent"
+      }
+      `}
     >
       {/* Image Section */}
       {imageUrl && (
@@ -50,7 +52,9 @@ const ImageWithContent = ({
           <img
             src={imageUrl}
             alt="Content Image"
-            className={`${rounded && "rounded-[20px]"} z-10 relative`}
+            className={`${rounded && "rounded-[20px]"} z-10 relative ${
+              partnerUsImg && "w-[500px]"
+            }`}
             ref={imageRef}
           />
           {border && (
@@ -72,7 +76,14 @@ const ImageWithContent = ({
           textWhite ? "text-white" : "text-gray-800"
         } ${imageOnLeft && "ml-5"}`}
       >
-        {heading && <h2 className="text-4xl font-bold mb-10 ">{heading}</h2>}
+        {tag && (
+          <p className="text-[20px] mb-6 text-green-500 font-semibold border w-fit py-2 px-5 rounded-[20px] shadow-lg">
+            {tag}
+          </p>
+        )}
+        {heading && (
+          <h2 className="text-4xl font-bold mb-10  text-gray-800">{heading}</h2>
+        )}
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}
         {buttonText && (
@@ -80,6 +91,7 @@ const ImageWithContent = ({
             buttonText={buttonText}
             btnLink={btnLink}
             btnWhite={textWhite}
+            greenBtn={greenBtn}
           />
         )}
       </div>
