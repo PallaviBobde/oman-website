@@ -34,9 +34,9 @@ const FAQs = () => {
   };
 
   return (
-    <div className="w-full mx-auto py-8 text-right bg-[#F7FAFC] px-20 py-30">
+    <div className="w-full mx-auto py-8 text-right bg-[#F7FAFC] pr-20 py-30">
       <h2 className="text-3xl font-bold mb-4 text-gray-700 px-20">الأسئلة الشائعة</h2>
-      <div className="divide-y divide-gray-200 px-20">
+      <div className="divide-y divide-gray-200">
         {faqs.map((faq, index) => (
           <div key={index} className="pt-4 bg-white mb-2 rounded">
             <div

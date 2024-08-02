@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef, useState } from "react";
 import ButtonWithArrow from "./ButtonWithArrow";
+import { FaRegFilePdf } from "react-icons/fa";
 
 const ImageWithContent = ({
   imageUrl,
@@ -17,7 +18,9 @@ const ImageWithContent = ({
   textbelowImage = null,
   partnerUsImg = false,
   tag,
-  greenBtn=false,
+  greenBtn = false,
+  darkgreenBtn=false,
+  greenText,
 }) => {
   // Determine flex direction based on imageOnLeft prop
   const flexDirection = imageOnLeft
@@ -81,8 +84,18 @@ const ImageWithContent = ({
             {tag}
           </p>
         )}
+        {greenText && (
+          <>
+           <p className="text-[24px] mb-6 text-green-500 font-semibold border w-fit p-5 rounded-lg shadow-lg">
+            <FaRegFilePdf />
+            </p>
+            <p className="text-xl uppercase text-green-500 font-semibold">
+              {greenText}
+            </p>
+          </>
+        )}
         {heading && (
-          <h2 className="text-4xl font-bold mb-10  text-gray-800">{heading}</h2>
+          <h2 className="text-4xl font-bold mb-5  text-gray-800">{heading}</h2>
         )}
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}
@@ -92,6 +105,7 @@ const ImageWithContent = ({
             btnLink={btnLink}
             btnWhite={textWhite}
             greenBtn={greenBtn}
+            darkgreenBtn={darkgreenBtn}
           />
         )}
       </div>

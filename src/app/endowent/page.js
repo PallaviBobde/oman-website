@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <div
-        className="relative h-[80vh] w-full overflow-hidden "
+        className="relative h-[80vh] w-full overflow-hidden fixed"
         style={{
           backgroundImage:
             "url('https://cdn.pixabay.com/photo/2023/05/30/08/06/planting-8027884_1280.jpg",
@@ -18,14 +18,14 @@ export default function Page() {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col justify-end p-6 text-white text-center">
-          <h2 className="font-bold mb-2 text-5xl py-5">Endowment</h2>
-          <h2 className="font-bold mb-2 text-5xl py-5">
+          <h2 className="font-bold mb-2 text-4xl py-5">Endowment</h2>
+          <h2 className="font-bold mb-2 text-4xl py-5">
             Create sustainable growth
           </h2>
         </div>
       </div>
 
-      <h2 className="text-bold text-xl p-20 text-gray-600">
+      <h2 className="text-bold text-xl pt-20 pb-10 px-40 text-gray-600">
         An endowment is a contribution to the assets of the Plant-for-the-Planet
         Foundation. An endowment makes sense, for example, if you wish to
         support a specific cause but do not want to establish your own
@@ -46,7 +46,7 @@ export default function Page() {
         <img
           src="https://www.plant-for-the-planet.org/wp-content/uploads/2022/10/Maike-Grundmann.jpg"
           alt="Content Image"
-          className="w-[20vw] m-10 rounded-[20px] h-[150px] w-[150px]"
+          className=" m-10 rounded-[20px] h-[150px] w-[200px] h-[200px] mr-20"
         />
         <div className="text-xl">
           <p className="mb-5">

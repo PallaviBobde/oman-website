@@ -16,6 +16,7 @@ import {
   FaDonate,
   FaEnvelope,
 } from "react-icons/fa";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 export default function Header() {
   const [supportUsMenu, setSupportUsMenu] = useState(false);
@@ -67,7 +68,7 @@ export default function Header() {
     <>
       <header className="text-gray-600 body-font border-b-2 fixed top-0 bg-white w-full z-20">
         <div className=" mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center  z-9999">
-          <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-base justify-between items-center text-s pt-10 my-[-30px] w-full">
+          <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-base justify-between items-center text-s pt-5 my-[-30px] w-full">
             <a
               className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
               href="/"
@@ -177,7 +178,7 @@ export default function Header() {
                       Youth and Children&apos;s
                     </a>
                     <a
-                      href="/blogs"
+                      href="/donate-for-research-park"
                       className="hover:bg-[#14A83F40] p-5 flex items-center"
                     >
                       <img
@@ -327,20 +328,21 @@ export default function Header() {
               >
                 <img src="/Blogs.png" className="m-[-20px] w-[100px]" /> Blogs
               </a>
+              <a
+                className=" font-semibold inline-flex items-center  border-0  px-2 py-1 focus:outline-none rounded-[25px] text-base md:mt-0 bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[10px]"
+                href="/sponsor-form"
+              >
+                Register as Sponsor
+              </a>
+              <a
+                className="ml-2  font-semibold flex items-center text-[12px] border px-3 rounded-[20px] hover:text-[#14A83F]"
+                href="/login"
+              >
+                Login
+              </a>
             </div>
-
-            <a
-              className="ml-3 font-semibold inline-flex items-center  border-0 py-1 px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px]"
-              href="/donation"
-            >
-              <img
-                src="/Donate.png"
-                className="m-[-40px] mr-[-30px] w-[100px]"
-              />
-              Donate
-            </a>
           </nav>
-          <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
+          {/* <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
             <a
               className=" font-semibold inline-flex items-center  border-0  px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px]"
               href="/sponsor-form"
@@ -349,18 +351,22 @@ export default function Header() {
             </a>
             <a
               className="ml-5  font-semibold flex items-center text-[14px] border px-3 rounded-[20px] hover:text-[#14A83F]"
-              href="/contact-us"
-            >
-              <FaEnvelope className="mr-1" />
-              Contact Us
-            </a>
-            <a
-              className="ml-5  font-semibold flex items-center text-[14px] border px-3 rounded-[20px] hover:text-[#14A83F]"
               href="/login"
             >
               <FaSignInAlt className="mr-1" /> Login
             </a>
-          </div>
+          </div> */}
+        </div>
+        <div className="absolute justify-center gap-4 p-4 top-40 right-0 z-64 w-fit h-[100px] bg-black flex flex-col rounded-l-[20px] items-center ">
+          <a
+            className=" font-semibold flex items-center hover:text-[#14A83F] "
+            href="/contact-us"
+          >
+            <FaEnvelope className=" text-white  text-[24px]" />
+          </a>
+          <a href="/donation" className="hover:bg-[#14A83F40] flex text-white">
+            <BiSolidDonateHeart className=" text-white  text-[24px]" />
+          </a>
         </div>
       </header>
       <div className="py-10" />

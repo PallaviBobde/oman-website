@@ -33,9 +33,11 @@ const ImageSlider = ({ images }) => {
           <button className={styles.rightArrow} onClick={nextSlide}>
             <FaChevronRight />
           </button>
-          <h1 className="text-4xl text-white font-bold w-1/2   pl-20  py-40 text-center">
-            The world had 3 trillion trees. But do you know where they are?
-          </h1>
+          <div className="text-4xl text-white font-bold w-full h-full text-center flex justify-center items-center pt-20">
+            <p className="w-3/4">
+              The world had 3 trillion trees. But do you know where they are?
+            </p>
+          </div>
         </div>
       </div>
       <div className={styles.dots}>

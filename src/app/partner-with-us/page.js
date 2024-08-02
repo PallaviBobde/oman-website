@@ -13,10 +13,10 @@ export default function Page() {
         <BgImageText />
         <div className="text-center text-gray-800 my-10 ">
           <div className="my-20">
-            <h1 className="font-bold text-4xl mx-20 mb-5 text-gray-800">
+            <h1 className="font-bold text-4xl mx-20 mb-5 text-gray-700">
               Let&apos;s make a difference together
             </h1>
-            <h2 className="text-bold text-xl mx-20 mb-[-40px]">
+            <h2 className="text-bold text-xl mx-20 mb-[-40px] text-gray-600">
               Plant-for-the-Planet is a global movement fighting for climate
               justice. We work on solutions for the most urgent challenges in
               the field of ecosystem restoration. We empower children and young
@@ -38,7 +38,7 @@ export default function Page() {
               <h2 className="text-4xl font-bold">
                 Youth <br /> Empowerment
               </h2>
-              <p className="text-xl">
+              <p className="text-[24px]">
                 children & youth to fight <br /> the climate crisis
               </p>
             </div>
@@ -49,31 +49,60 @@ export default function Page() {
             alt="Content Image"
             className="w-[40vw] mx-5"
           />
-            <div className="absolute top-20 left-10 z-20">
+            <div className="absolute bottom-10 left-10 z-20">
               <h2 className="text-4xl font-bold">
                 Restoration Tools
               </h2>
-              <p className="text-xl">
+              <p className="text-[24px]">
                 to fund, restore, monitor & conserve 
               </p>
             </div>
           </div>
-          
-          <img
+          <div className="text-white relative">
+            <img
             src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/Restoration-Advice.png"
             alt="Content Image"
             className="w-[40vw] mx-5"
           />
-          <img
+            <div className="absolute bottom-10 left-10 z-20">
+              <h2 className="text-4xl font-bold">
+                Restoration Advice
+              </h2>
+              <p className="text-[24px]">
+                & research
+              </p>
+            </div>
+          </div>
+          <div className="text-white relative">
+           <img
             src="https://www.plant-for-the-planet.org/wp-content/uploads/2024/04/The-Change-Choclate-e1716314445105.png"
             alt="Content Image"
             className="w-[40vw] mx-5"
           />
-          <img
-            src="https://cdn.pixabay.com/photo/2017/11/12/13/37/forest-2942477_1280.jpg"
+            <div className="absolute bottom-20 left-10 z-20">
+              <h2 className="text-4xl font-bold">
+                The Change <br/>Choclate
+              </h2>
+              <p className="text-[24px]">
+                5 Bars = 1 tree
+              </p>
+            </div>
+          </div>
+          <div className="text-white relative">
+           <img
+            src="https://cdn.pixabay.com/photo/2020/04/18/00/03/forest-5057220_1280.jpg"
             alt="Content Image"
-            className="w-[85vw] m-5 h-[30vh] rounded-[20px] "
+            className="w-[85vw] m-5 h-[45vh] rounded-[20px] "
           />
+            <div className="absolute bottom-32 left-16 z-20">
+              <h2 className="text-4xl font-bold">
+                Forest Restoration & Conservation
+              </h2>
+              <p className="text-[24px]">
+                in Mexico, Ghana & Spain
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -72,7 +72,7 @@ const PartnersTab = () => {
 
   return (
     <div className='p-10'>
-      <ul className={`flex border-b border-gray-200 bg-gradient-to-r from-[#007A48] to-[#65AF31] py-8 mt-10  items-center justify-center rounded-t-[20px] ${activeTab ===-1 ?"rounded-[20px] ":"rounded-t-[20px]"} overflow-scroll`}>
+      <ul className={`flex border-b border-gray-200 bg-gradient-to-r from-[#007A48] to-[#65AF31] py-8 mt-10  items-center justify-center rounded-t-[20px] ${activeTab ===-1 ?"rounded-[20px] ":"rounded-t-[20px]"} overflow-x-scroll`}>
         {emojis.map((emoji, index) => (
           <li key={index} className=" mr-1">
             <button
@@ -95,8 +95,6 @@ const PartnersTab = () => {
         imageOnLeft
         rounded
         textWhite
-         background
-          bgColor="#F5F3ED"
       />
       </div>
         )

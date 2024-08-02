@@ -1,6 +1,7 @@
 "use client";
 import ButtonWithArrow from "@/components/common/ButtonWithArrow";
 import FaqAccordion from "@/components/common/FaqAccordian";
+import FaqAccordionEnglish from "@/components/common/FaqAccordianEnglish";
 import ImageSlider from "@/components/common/ImageSlider";
 import ImageWithContent from "@/components/common/ImageWithContent";
 import ImageWithSubheading from "@/components/common/ImageWithSubHeading";
@@ -66,10 +67,6 @@ export default function Home() {
     "https://cdn.pixabay.com/photo/2023/06/10/16/02/plant-8054344_1280.jpg",
   ];
 
-  // if (typeof window !== 'undefined') {
-  //   return <></>
-  // }
-
   return (
     <>
       <ImageSlider images={images} />
@@ -78,8 +75,6 @@ export default function Home() {
       <div className="bg-[#F5F3ED]">
         <ImageWithContent
           imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/20190919_ac_curitiba_19-scaled.jpg"
-          // heading="Climate Justice Ambassadors: We Make Ourselves Heard"
-          // subheading="Over 100,273 children and youth have already been trained at 1,866 academies in 76 countries, where we teach each other about the climate crisis. As Climate Justice Ambassadors we fight for our future by planting trees, giving speeches, protesting, and much more."
           imageOnLeft
           border
           rounded
@@ -98,7 +93,10 @@ export default function Home() {
           </p>
           <div className="flex justify-between items-center">
             <h2 className="text-xl font-bold  ">Upcoming academies</h2>
-            <ButtonWithArrow buttonText="All Academies" btnLink="/youth-and-children" />
+            <ButtonWithArrow
+              buttonText="All Academies"
+              btnLink="/youth-and-children"
+            />
           </div>
           <div className="flex">
             <AcademyCard
@@ -117,11 +115,10 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-between">
-            <ButtonWithArrow buttonText="Join Us" btnLink="/youth-and-children" />
-            {/* <ButtonWithArrow
-              buttonText="Ideas and tools"
-              btnLink="/academies"
-            /> */}
+            <ButtonWithArrow
+              buttonText="Join Us"
+              btnLink="/youth-and-children"
+            />
           </div>
         </ImageWithContent>
       </div>
@@ -179,19 +176,36 @@ export default function Home() {
         imageOnLeft
         btnLink="/platform"
       />
-        <ImageWithContent
-          imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
-          heading="Partner with us!"
-          subheading="We want to work with you on your climate journey and mobilize your community for forest restoration."
-          rounded
-          background
-          partnerUsImg
-        >
+      <ImageWithContent
+        imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
+        heading="Partner with us!"
+        subheading="We want to work with you on your climate journey and mobilize your community for forest restoration."
+        rounded
+        background
+        partnerUsImg
+      >
+        <div className="flex">
+          <ButtonWithArrow buttonText="Partner with us" />
+          <ButtonWithArrow buttonText="Sustainable events" />
+        </div>
+      </ImageWithContent>
+     
+         
+      <div className="flex text-gray-800 items-center justify-center">
+        <img src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/kid_cut_out-e1607181756223.png" className="w-[400px]"/>
+        <div className="mx-20">
+          <h2 className="text-[24px] mb-5">Empower children and support us!</h2>
           <div className="flex">
+            <a
+              className="ml-3 font-semibold inline-flex items-center  border-0 px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-[#0C7D48] text-[#fff]  text-[14px] mr-5"
+              href="/donation"
+            >
+              Donate
+            </a>
             <ButtonWithArrow buttonText="Partner with us" />
-            <ButtonWithArrow buttonText="Sustainable events" />
           </div>
-        </ImageWithContent>
+        </div>
+      </div>
 
       <VideoContainer
         videos={videoLinks}
@@ -218,14 +232,15 @@ Back to the Roots: How Felix, Alina and Elly Inspire the Next Generation to Clim
       <div className="flex items-center justify-center mb-20 mt-[-20px]">
         <ButtonWithArrow buttonText="Read blogs here" btnLink="/blogs" />
       </div>
-
-      <FaqAccordion />
+      <div className="flex justify-center">
+        <FaqAccordionEnglish />
+        <FaqAccordion />
+      </div>
     </>
   );
 }
 
 // [#60AB32]
 // [#0C7D48]
-
 
 // gray to green logo - #14A83F
