@@ -105,7 +105,7 @@ export default function Page() {
               htmlFor="applicantName"
               className="block text-sm font-medium text-gray-700"
             >
-              Applicant's Name *
+              Applicant&apos;s Name *
             </label>
             <input
               id="applicantName"
@@ -163,11 +163,11 @@ export default function Page() {
             </label>
             <label className="flex items-center">
               <input type="checkbox" className="mr-2" />
-              Introduction to the company's products and services
+              Introduction to the company&apos;s products and services
             </label>
             <label className="flex items-center">
               <input type="checkbox" className="mr-2" />
-              Motivating the facility's employees
+              Motivating the facility`&apos;s employees
             </label>
             <label className="flex items-center">
               <input type="checkbox" className="mr-2" />
@@ -180,7 +180,7 @@ export default function Page() {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Would you like to add your facility logo to the platform's Sponsor
+              Would you like to add your facility logo to the platform`&apos;s Sponsor
               Partners page? *
             </label>
             <label className="flex items-center">
@@ -213,7 +213,7 @@ export default function Page() {
               htmlFor="annualBudget"
               className="block text-sm font-medium text-gray-700"
             >
-              What is the facility's annual budget allocated for commercial
+              What is the facility`&apos;s annual budget allocated for commercial
               sponsorships? *
             </label>
             <select
