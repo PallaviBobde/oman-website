@@ -36,8 +36,8 @@ const ButtonWithArrow = ({
   return (
     <a
       className={`flex items-center  py-2  text-${
-        btnWhite ? "[#ffffff]" : "[#14A83F]"
-      } font-semibold rounded-[25px] w-fit focus:outline-none  hover:opacity-60 text-green-600 ${
+        btnWhite ? "[#ffffff]" : "green-600"
+      }  font-semibold rounded-[25px] w-fit focus:outline-none  hover:opacity-60 ${
         greenBtn && "px-10 bg-[#E3F5EA] font-bold mt-5"
       }`}
       href={btnLink}

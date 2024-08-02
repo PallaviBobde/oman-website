@@ -78,7 +78,6 @@ export default function Home() {
           imageOnLeft
           border
           rounded
-          background
         >
           <h2 className="text-4xl font-bold mb-10 ">
             Climate Justice Ambassadors: We Make Ourselves Heard
