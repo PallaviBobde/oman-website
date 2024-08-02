@@ -184,8 +184,8 @@ export default function Home() {
         partnerUsImg
       >
         <div className="flex">
-          <ButtonWithArrow buttonText="Partner with us" />
-          <ButtonWithArrow buttonText="Sustainable events" />
+          <ButtonWithArrow buttonText="Partner with us" btnLink="/partner-with-us" />
+          <ButtonWithArrow buttonText="Sustainable events" btnLink="/sustainable-events" />
         </div>
       </ImageWithContent>
      
@@ -201,7 +201,7 @@ export default function Home() {
             >
               Donate
             </a>
-            <ButtonWithArrow buttonText="Partner with us" />
+            <ButtonWithArrow buttonText="Partner with us" btnLink="/partner-with-us" />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ export default function Page() {
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2021/05/header_tem_site_monaco.jpg"
         heading="Support Us!"
         buttonText="Donate for the Research Park"
+        btnLink="/donation"
         rounded
         border
         imageOnLeft

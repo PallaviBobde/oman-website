@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/header";
 import Footer from "@/components/common/Footer";
@@ -6,7 +6,7 @@ import ImageWithContent from "@/components/common/ImageWithContent";
 import MasterContainer from "@/components/common/MasterContainer";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const opensans = Open_Sans({ subsets: ["latin"] });
 // const openSans = Open_Sans({
 //   subsets: ['latin'], // Specify the subsets you want to include, like 'latin-ext', etc.
 //   weight: ['400', '700'], // Specify the font weights you want to include
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head> */}
-      <body className={inter.className}>
+      <body className={opensans.className}>
         <Header />
         {children}
         <div className="flex justify-center">

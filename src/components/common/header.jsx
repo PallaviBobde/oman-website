@@ -153,7 +153,7 @@ export default function Header() {
                 //     </a>
                 //   </div>
                 // </div>
-                <div className="absolute top-24 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div className="absolute top-20 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
                   <a
                     href="/youth-and-children"
                     className="hover:bg-[#14A83F40] p-5 flex"
@@ -238,7 +238,7 @@ export default function Header() {
                 //     </a>
                 //   </div>
                 // </div>)}
-                <div className="absolute top-24 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div className="absolute top-20 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
                   <a
                     href="/partner-with-us"
                     className="hover:bg-[#14A83F40] p-5 flex"
@@ -335,15 +335,21 @@ export default function Header() {
             </a>
           </div> */}
         </div>
-        <div className="absolute justify-center gap-4 p-4 top-40 right-0 z-64 w-fit h-[100px] bg-black flex flex-col rounded-l-[20px] items-center ">
+        <div className="absolute justify-center gap-4 p-2 top-40 right-0 z-64 w-fit h-[150px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center ">
           <a
-            className=" font-semibold flex items-center hover:text-[#14A83F] "
+            className="font-semibold flex items-center flex-col justify-center group"
             href="/contact-us"
           >
-            <FaEnvelope className=" text-white  text-[24px]" />
+            <FaEnvelope className="text-white text-[24px]" />
+            <p className="font-normal text-[12px] text-white opacity-0 group-hover:opacity-100">
+              Contact
+            </p>
           </a>
-          <a href="/donation" className="hover:bg-[#14A83F40] flex text-white">
-            <BiSolidDonateHeart className=" text-white  text-[24px]" />
+          <a href="/donation" className="flex flex-col items-center group">
+            <BiSolidDonateHeart className="text-white text-[24px]" />
+            <p className="font-normal text-[12px] text-white opacity-0 group-hover:opacity-100">
+              Donate
+            </p>
           </a>
         </div>
       </header>

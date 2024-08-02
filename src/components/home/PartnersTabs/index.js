@@ -5,7 +5,7 @@ const PartnersTab = () => {
   const [activeTab, setActiveTab] = useState(-1);
 
   // Define emojis for tabs
-  const emojis = ['🇺🇸', '🇬🇧', '🇫🇷', '🇨🇦', '🇩🇪', '🇯🇵', '🇮🇹', '🇪🇸','🇩🇪', '🇯🇵'];
+  const emojis = ['/1f1e7-1f1f7.svg', '/1f1e8-1f1ff.svg', '/1f1e9-1f1ea.svg', '/1f1ea-1f1f8.svg', '/1f1ec-1f1e7.svg', '🇯🇵', '🇮🇹', '🇪🇸','🇩🇪', '🇯🇵'];
 
   const cardData = [
   {
@@ -73,13 +73,13 @@ const PartnersTab = () => {
   return (
     <div className='p-10'>
       <ul className={`flex border-b border-gray-200 bg-gradient-to-r from-[#007A48] to-[#65AF31] py-8 mt-10  items-center justify-center rounded-t-[20px] ${activeTab ===-1 ?"rounded-[20px] ":"rounded-t-[20px]"} overflow-x-scroll`}>
-        {emojis.map((emoji, index) => (
+        {emojis.map((imgUrl, index) => (
           <li key={index} className=" mr-1">
             <button
               className={`inline-block mx-2 py-2 px-11 rounded-[10px] text-[24px] bg-[#91BDA4] hover:bg-white ${activeTab === index && 'bg-white'} `}
               onClick={() => setActiveTab(index)}
             >
-              {emoji}
+              <img src={imgUrl} className='w-[50px] h-[50px]' />
             </button>
           </li>
         ))}

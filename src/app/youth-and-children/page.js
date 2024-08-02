@@ -88,6 +88,7 @@ export default function Page() {
         heading="Support our work with a donation"
         subheading="We enable children and young people worldwide to participate free of charge in our empowerment programmes, such as the Plant-for-the-Planet Academies and the Children's Conference. Our work is largely donation-based. That's why we need you! With your donation, you enable children and young people worldwide to work together with our network of renaturation organisations for ecosystem restoration, forest protection and climate justice."
         buttonText="Donate"
+        btnLink="/donation"
         imageOnLeft
         rounded
         border
