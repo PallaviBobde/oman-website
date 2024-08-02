@@ -95,7 +95,7 @@ const ImageWithContent = ({
           </>
         )}
         {heading && (
-          <h2 className="text-4xl font-bold mb-5  text-gray-800">{heading}</h2>
+          <h2 className="text-4xl font-bold mb-5  ">{heading}</h2>
         )}
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}

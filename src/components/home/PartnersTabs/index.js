@@ -1,11 +1,12 @@
 import ImageWithContent from '@/components/common/ImageWithContent';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const PartnersTab = () => {
   const [activeTab, setActiveTab] = useState(-1);
 
   // Define emojis for tabs
-  const emojis = ['/1f1e7-1f1f7.svg', '/1f1e8-1f1ff.svg', '/1f1e9-1f1ea.svg', '/1f1ea-1f1f8.svg', '/1f1ec-1f1e7.svg', '🇯🇵', '🇮🇹', '🇪🇸','🇩🇪', '🇯🇵'];
+  const emojis = ['/1f1e7-1f1f7.svg', '/1f1e8-1f1ff.svg', '/1f1e9-1f1ea.svg', '/1f1ea-1f1f8.svg', '/1f1ec-1f1e7.svg','/1f1ec-1f1ed.svg','/1f1ee-1f1f9.svg','/1f1f2-1f1fd.svg', '/1f1fa-1f1f8.svg','/1f1fa-1f1f8.svg'];
 
   const cardData = [
   {
@@ -76,10 +77,10 @@ const PartnersTab = () => {
         {emojis.map((imgUrl, index) => (
           <li key={index} className=" mr-1">
             <button
-              className={`inline-block mx-2 py-2 px-11 rounded-[10px] text-[24px] bg-[#91BDA4] hover:bg-white ${activeTab === index && 'bg-white'} `}
+              className={`inline-block mx-2 py-2 px-9 rounded-[10px] text-[24px] bg-[#91BDA4] hover:bg-white ${activeTab === index && 'bg-white'} `}
               onClick={() => setActiveTab(index)}
             >
-              <img src={imgUrl} className='w-[50px] h-[50px]' />
+              <Image src={imgUrl} width={30} height={30} />
             </button>
           </li>
         ))}
