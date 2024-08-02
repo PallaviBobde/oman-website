@@ -58,11 +58,11 @@ export default function Page() {
               and an Ambassador-kit: your own library for climate savers. You
               are now officially a <b>Climate Justice Ambassador.</b>
             </p>
-            <ButtonWithArrow buttonText={"What is an Academy?"} />
+            <ButtonWithArrow buttonText={"What is an Academy?"} btnLink="/support-doc.pdf" />
             <div className="text-[#68B030] flex items-center">
-              <p className="text-[#68B030] font-semibold text-2xl">
+              <a className="text-[#68B030] font-semibold text-2xl" href="/support-doc.pdf">
                 Information for participants and parents Image
-              </p>
+              </a>
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -98,6 +98,7 @@ export default function Page() {
         heading="Online Academy"
         subheading="You can also become a Climate Justice Ambassador by attending our Plant-for-the-Planet online Academy. Simply visit a Plant-for-the-Planet Online Academy! In this two-hour workshop, you will learn everything you need to know about the climate crisis, Plant-for-the-Planet, and how you can start activities by yourself. Want to know more - then sign up!"
         buttonText="What is an Online Academy?"
+        btnLink="/support-doc.pdf"
         background
         rounded
         border
@@ -106,6 +107,7 @@ export default function Page() {
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2021/04/Children-giving-presentation.jpg"
         heading="Support us at the Academy"
         buttonText="Presentation"
+        btnLink="/support-doc.pdf"
         imageOnLeft
         rounded
         border
@@ -122,6 +124,7 @@ export default function Page() {
         rounded
         border
         background
+        btnLink="/support-doc.pdf"
       >
         <p className="text-gray-600 text-[20px]">Do you want to support Academies as an adult and organize an Academy together with Plant-for-the-Planet? Write to us
          <span className="text-[#209653]"> akademie@plant-for-the-planet.org</span>

@@ -41,7 +41,7 @@ export default function Header() {
       if (item === "academy") {
         setAcademyMenu(false);
       }
-    }, 500);
+    }, 1000);
   };
 
   const handleClickOutside = (event) => {
