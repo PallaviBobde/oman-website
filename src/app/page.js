@@ -1,23 +1,22 @@
 "use client";
 import ButtonWithArrow from "@/components/common/ButtonWithArrow";
-import FaqAccordion from "@/components/common/FaqAccordian";
 import FaqAccordionEnglish from "@/components/common/FaqAccordianEnglish";
 import ImageSlider from "@/components/common/ImageSlider";
 import ImageWithContent from "@/components/common/ImageWithContent";
 import ImageWithSubheading from "@/components/common/ImageWithSubHeading";
+import MasterContainer from "@/components/common/MasterContainer";
+import VideoContainer from "@/components/common/VideoContainer";
+import PartnersTab from "@/components/home/PartnersTabs";
 import dynamic from "next/dynamic";
 // import MapComponent from "@/components/common/MapComponent";
 const MapComponent = dynamic(
   () => import("../components/common/MapComponent"),
   { ssr: false }
 );
-import MasterContainer from "@/components/common/MasterContainer";
-import VideoContainer from "@/components/common/VideoContainer";
-import PartnersTab from "@/components/home/PartnersTabs";
 
 // const flowbite = dynamic(()=>import('flowbite'));
-import { useEffect } from "react";
 import AcademyCard from "@/components/youth-and-children/academyCard";
+import { useEffect } from "react";
 
 // export default function Home() {
 //   const markers = [
@@ -79,11 +78,11 @@ export default function Home() {
           border
           rounded
         >
-          <h2 className="text-4xl font-bold mb-10 ">
-            Climate Justice Ambassadors: We Make Ourselves Heard
+          <h2 className="text-4xl font-bold mb-10 text-[26px] ">
+            Climate Justice Ambassadors:<br></br> We Make Ourselves Heard
           </h2>
 
-          <p className="text-lg mb-4 ">
+          <p className="text-[20px] mb-4 ">
             Over 100,273 children and youth have already been trained at 1,866
             academies in 76 countries, where we teach each other about the
             climate crisis. As Climate Justice Ambassadors we fight for our
@@ -91,7 +90,7 @@ export default function Home() {
             more.
           </p>
           <div className="flex justify-between items-center">
-            <h2 className="text-xl font-bold  ">Upcoming academies</h2>
+            <h2 className="text-[18.7px] font-bold  ">Upcoming academies</h2>
             <ButtonWithArrow
               buttonText="All Academies"
               btnLink="/youth-and-children"
@@ -158,13 +157,14 @@ export default function Home() {
             />
           </div>
         </div>
+
         <iframe
           width="100%"
           height="200"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          src="https://www.youtube.com/embed/YG1558vDIns?si=qGzJs-5JXUJAmZ26"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="flex-1 min-w-[400px]  h-[350px] bg-gray-500 mt-5"
+          className="flex-1 min-w-[400px]  h-[350px] bg-gray-500 mt-5 "
         ></iframe>
       </div>
       <ImageWithContent
@@ -184,24 +184,36 @@ export default function Home() {
         partnerUsImg
       >
         <div className="flex">
-          <ButtonWithArrow buttonText="Partner with us" btnLink="/partner-with-us" />
-          <ButtonWithArrow buttonText="Sustainable events" btnLink="/sustainable-events" />
+          <ButtonWithArrow
+            buttonText="Partner with us"
+            btnLink="/partner-with-us"
+          />
+          <ButtonWithArrow
+            buttonText="Sustainable events"
+            btnLink="/sustainable-events"
+          />
         </div>
       </ImageWithContent>
-     
-         
+
       <div className="flex text-gray-800 items-center justify-center">
-        <img src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/kid_cut_out-e1607181756223.png" className="w-[400px]"/>
+        <img
+          src="https://www.plant-for-the-planet.org/wp-content/uploads/2020/11/kid_cut_out-e1607181756223.png"
+          className="w-[400px] relative hover:translate-y-[-10px]  transition-transform duration-300 cursor-pointer"
+        />
         <div className="mx-20">
           <h2 className="text-[24px] mb-5">Empower children and support us!</h2>
           <div className="flex">
             <a
-              className="ml-3 font-semibold inline-flex items-center  border-0 px-6 focus:outline-none rounded-[25px] text-base md:mt-0 bg-[#0C7D48] text-[#fff]  text-[14px] mr-5"
+              style={{ boxShadow: "0em 0.15em 0.65em 0em rgba(0, 0, 0, 0.25)" }}
+              className="ml-3 font-semibold inline-flex items-center  border-0 px-6  focus:outline-none rounded-[25px] text-base md:mt-0 bg-[#0C7D48] text-[#fff]  text-[14px] mr-5  relative hover:translate-y-[-10px]  transition-transform duration-300 cursor-pointer"
               href="/donation"
             >
               Donate
             </a>
-            <ButtonWithArrow buttonText="Partner with us" btnLink="/partner-with-us" />
+            <ButtonWithArrow
+              buttonText="Become a member"
+              btnLink="/partner-with-us"
+            />
           </div>
         </div>
       </div>
@@ -233,7 +245,7 @@ Back to the Roots: How Felix, Alina and Elly Inspire the Next Generation to Clim
       </div>
       <div className="flex justify-center">
         <FaqAccordionEnglish />
-        <FaqAccordion />
+        {/* <FaqAccordion /> */}
       </div>
     </>
   );
