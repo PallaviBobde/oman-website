@@ -1,21 +1,20 @@
 // components/ButtonWithIcon.js
-import React from "react";
 
 const ButtonWithArrow = ({
   buttonText,
   btnLink,
   btnWhite,
   greenBtn = false,
-  darkgreenBtn=false,
+  darkgreenBtn = false,
 }) => {
-  if(darkgreenBtn){
+  if (darkgreenBtn) {
     return (
       <a
-        className={`flex items-center  py-2  text-white font-semibold rounded-[25px] w-fit focus:outline-none  hover:opacity-60 bg-green-600 px-5`}
+        className={`flex items-center  py-2 mr-3 text-white font-semibold rounded-[25px] w-fit focus:outline-none  hover:opacity-60 bg-[#68B030] px-5`}
         href={btnLink}
         target="_blank"
       >
-        <span className="mr-2 text-2xl">{buttonText}</span>
+        <span className="mr-2 text-[18.7px]">{buttonText}</span>
         <svg
           className="w-5 h-5 "
           fill="none"
@@ -35,8 +34,8 @@ const ButtonWithArrow = ({
   }
   return (
     <a
-      className={`flex items-center  py-2  text-${
-        btnWhite ? "[#ffffff]" : "green-600"
+      className={`flex items-center  py-2 mr-3  text-${
+        btnWhite ? "[#ffffff]" : "[#68B030]"
       }  font-semibold rounded-[25px] w-fit focus:outline-none  hover:opacity-60 ${
         greenBtn && "px-10 bg-[#E3F5EA] font-bold mt-5"
       }`}
@@ -60,7 +59,7 @@ const ButtonWithArrow = ({
       </svg>
       {!greenBtn && (
         <svg
-          className="w-5 h-5 ml-[-10px] text-[#68B03060]"
+          className="w-5 h-5 ml-[-10px] text-[#68B030]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

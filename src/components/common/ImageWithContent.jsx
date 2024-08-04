@@ -1,7 +1,7 @@
-'use client'
-import React, { useEffect, useRef, useState } from "react";
-import ButtonWithArrow from "./ButtonWithArrow";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import { FaRegFilePdf } from "react-icons/fa";
+import ButtonWithArrow from "./ButtonWithArrow";
 
 const ImageWithContent = ({
   imageUrl,
@@ -20,7 +20,7 @@ const ImageWithContent = ({
   partnerUsImg = false,
   tag,
   greenBtn = false,
-  darkgreenBtn=false,
+  darkgreenBtn = false,
   greenText,
 }) => {
   // Determine flex direction based on imageOnLeft prop
@@ -45,7 +45,7 @@ const ImageWithContent = ({
 
   return (
     <div
-      className={`flex  ${flexDirection} items-start justify-center py-20 px-4 md:px-12 bg-${
+      className={`flex  ${flexDirection}  justify-center items-center py-20 px-4 md:px-12 bg-${
         background ? "[#F7FBF5]" : "transparent"
       }
       `}
@@ -95,8 +95,10 @@ const ImageWithContent = ({
             </p>
           </>
         )}
-        {heading && <h2 className="text-4xl font-bold mb-5  ">{heading}</h2>}
-        {subTitle && <h4 className="text-2xl font-semibold mb-5  ">{subTitle}</h4>}
+        {heading && <h2 className="text-[28px] font-bold mb-5  ">{heading}</h2>}
+        {subTitle && (
+          <h4 className="text-2xl font-semibold mb-5  ">{subTitle}</h4>
+        )}
 
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}
