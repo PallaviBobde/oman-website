@@ -71,61 +71,82 @@ export default function Header() {
           <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-base justify-between items-center text-s py-5 my-[-30px] w-full">
             <Image
               src="/main-logo.png"
-              width={80}
-              height={20}
+              width={100}
+              height={30}
               alt="Plant for the Planet Logo"
-              className="mr-5"
+              // className="mr-5"
             />
             <a
-              className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/"
             >
-              <img src="/Home.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Home.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Home
             </a>
             <a
-              className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/platform"
             >
-              <img src="/Platform.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Platform.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Platform
             </a>
             <a
-              className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/about-us"
             >
-              <img src="/About-us.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/About-us.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               About us
             </a>
             <a
-              className="mr-5   flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/statics-and-records"
             >
-              <img src="/Statics&Records.png" className="m-[-30px] w-[80px]" />
+              <img
+                src="/Statics&Records.png"
+                className="m-[-30px] w-[92px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Statics and Records
             </a>
             <a
-              className="mr-5 flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/projects"
             >
-              <img src="/Projects.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Projects.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Projects
             </a>
             <a
-              className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/live-and-podcasts"
             >
-              <img src="/Liveandpodcasts.png" className="m-[-30px] w-[80px]" />
+              <img
+                src="/Liveandpodcasts.png"
+                className="m-[-30px] w-[92px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Live and podcasts
             </a>
             <div
-              className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F] cursor-pointer"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group cursor-pointer"
               // href="/academy"
               onMouseEnter={() => handleMouseEnter("academy")}
               onMouseLeave={() => handleMouseLeave("academy")}
               ref={academyMenuRef}
             >
-              <img src="/Academy.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Academy.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Academy
               {academyMenu && (
                 // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
@@ -188,20 +209,26 @@ export default function Header() {
               )}
             </div>
             <a
-              className="mr-5  flex flex-col items-center text-[12px] hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/support-us"
             >
-              <img src="/Requests.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Requests.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Requests
             </a>
             <p
-              className="mr-5 flex flex-col items-center text-[12px] hover:text-[#14A83F] cursor-pointer"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group cursor-pointer"
               // href="/support-us"
               onMouseEnter={() => handleMouseEnter("support")}
               onMouseLeave={() => handleMouseLeave("support")}
               ref={supportMenuRef}
             >
-              <img src="/SupportUs.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/SupportUs.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Support Us
               {supportUsMenu && (
                 // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
@@ -294,31 +321,40 @@ export default function Header() {
               )}
             </p>
             <a
-              className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/tracking"
             >
-              <img src="/Tracking.png" className="m-[-20px] w-[100px]" />
+              <img
+                src="/Tracking.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
               Tracking
             </a>
             <a
-              className="mr-5 flex flex-col items-center text-[12px]  hover:text-[#14A83F]"
+              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/blogs"
             >
-              <img src="/Blogs.png" className="m-[-20px] w-[100px]" /> Blogs
+              <img
+                src="/Blogs.png"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />{" "}
+              Blogs
             </a>
-            <a
-              className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[10px] w-[100px] text-center leading-3 py-2"
-              href="/sponsor-form"
-            >
-              Register as
-              <br /> Sponsor
-            </a>
-            <a
-              className="ml-2  font-semibold flex items-center text-[12px] border px-3 rounded-[20px] hover:text-[#14A83F]"
-              href="/login"
-            >
-              Login
-            </a>
+            <div className="flex flex-col gap-2 items-center">
+              <a
+                className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-sm w-[100px] text-center leading-3 py-3 font-semibold"
+                href="/login"
+              >
+                Login
+              </a>
+              <a
+                className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-sm w-[150px] text-center leading-3 py-3 font-semibold"
+                href="/sponsor-form"
+              >
+                <span>Register </span>
+                <span class="mt-2">as Sponsor</span>
+              </a>
+            </div>
           </nav>
           {/* <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
             <a

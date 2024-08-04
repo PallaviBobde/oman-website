@@ -6,6 +6,7 @@ import { FaRegFilePdf } from "react-icons/fa";
 const ImageWithContent = ({
   imageUrl,
   heading,
+  subTitle,
   subheading,
   buttonText,
   imageOnLeft,
@@ -44,7 +45,7 @@ const ImageWithContent = ({
 
   return (
     <div
-      className={`flex  ${flexDirection} items-center justify-center py-20 px-4 md:px-12 bg-${
+      className={`flex  ${flexDirection} items-start justify-center py-20 px-4 md:px-12 bg-${
         background ? "[#F7FBF5]" : "transparent"
       }
       `}
@@ -86,17 +87,17 @@ const ImageWithContent = ({
         )}
         {greenText && (
           <>
-           <p className="text-[24px] mb-6 text-green-500 font-semibold border w-fit p-5 rounded-lg shadow-lg">
-            <FaRegFilePdf />
+            <p className="text-[24px] mb-6 text-green-500 font-semibold border w-fit p-5 rounded-lg shadow-lg">
+              <FaRegFilePdf />
             </p>
             <p className="text-xl uppercase text-green-500 font-semibold">
               {greenText}
             </p>
           </>
         )}
-        {heading && (
-          <h2 className="text-4xl font-bold mb-5  ">{heading}</h2>
-        )}
+        {heading && <h2 className="text-4xl font-bold mb-5  ">{heading}</h2>}
+        {subTitle && <h4 className="text-2xl font-semibold mb-5  ">{subTitle}</h4>}
+
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}
         {buttonText && (
