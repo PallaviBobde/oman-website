@@ -17,6 +17,8 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { BiSolidDonateHeart } from "react-icons/bi";
+import { FaHandshakeSimple } from "react-icons/fa6";
+
 
 export default function Header() {
   const [supportUsMenu, setSupportUsMenu] = useState(false);
@@ -71,10 +73,11 @@ export default function Header() {
           <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-base justify-between items-center text-s py-5 my-[-30px] w-full">
             <Image
               src="/main-logo.png"
-              width={100}
+              width={120}
               height={30}
               alt="Plant for the Planet Logo"
-              // className="mr-5"
+              className="mx-5"
+              style={{ objectFit: "contain" }}
             />
             <a
               className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
@@ -137,77 +140,58 @@ export default function Header() {
               Live and podcasts
             </a>
             <div
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group cursor-pointer"
-              // href="/academy"
+              className={`flex flex-col items-center text-[14px] font-bold cursor-pointer ${
+                academyMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
+              }`}
               onMouseEnter={() => handleMouseEnter("academy")}
               onMouseLeave={() => handleMouseLeave("academy")}
               ref={academyMenuRef}
             >
               <img
                 src="/Academy.png"
-                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+                className={`m-[-30px] w-[150px] filter ${
+                  academyMenu
+                    ? "grayscale-0 brightness-100"
+                    : "grayscale brightness-0"
+                }`}
               />
               Academy
               {academyMenu && (
-                // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
-                //   <img
-                //     src="https://cdn.pixabay.com/photo/2016/08/01/06/51/people-1560569_1280.jpg"
-                //     alt="academy"
-                //     className="w-[300px] h-[200px] rounded-lg mr-10"
-                //   />
-                //   <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
-                //     <p className=" text-gray-400 mb-3">ACADEMY</p>
-                //     <a
-                //       href="/youth-and-children"
-                //       className="hover:bg-[#14A83F40] py-1"
-                //     >
-                //       👧 Youth and Children&apos;s
-                //     </a>
-                //     <a href="/blogs" className="hover:bg-[#14A83F40] py-1">
-                //       🔬 Research and Experiments
-                //     </a>
-                //     <a
-                //       href="/session-talk"
-                //       className="hover:bg-[#14A83F40] py-1"
-                //     >
-                //       🎤 Session Talk
-                //     </a>
-                //   </div>
-                // </div>
-                <div className="absolute top-20 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div className="absolute top-20 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg">
                   <a
                     href="/youth-and-children"
-                    className="hover:bg-[#14A83F40] p-5 flex"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/YouthandChildren.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Youth and Children&apos;s
+                    <span>Youth and Children's</span>
                   </a>
                   <a
                     href="/donate-for-research-park"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/Research&Experiments.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Research and Experiments
+                    <span>Research and Experiments</span>
                   </a>
                   <a
                     href="/session-talk"
-                    className="hover:bg-[#14A83F40]  p-5 flex"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/SessionTalk.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Session Talk
+                    <span>Session Talk</span>
                   </a>
                 </div>
               )}
             </div>
+
             <a
               className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/support-us"
@@ -219,107 +203,88 @@ export default function Header() {
               Requests
             </a>
             <p
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group cursor-pointer"
-              // href="/support-us"
+              className={`flex flex-col items-center text-[14px] font-bold cursor-pointer ${
+                supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
+              }`}
               onMouseEnter={() => handleMouseEnter("support")}
               onMouseLeave={() => handleMouseLeave("support")}
               ref={supportMenuRef}
             >
               <img
                 src="/SupportUs.png"
-                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+                className={`m-[-30px] w-[150px] filter ${
+                  supportUsMenu
+                    ? "grayscale-0 brightness-100"
+                    : "grayscale brightness-0"
+                }`}
               />
               Support Us
               {supportUsMenu && (
-                // <div className="w-screen absolute top-24 left-0 bg-[#E1EFD8] flex text-gray-500 z-40 font-normal text-[12px] border rounded p-10 justify-center">
-                //   <img
-                //     src="https://www.plant-for-the-planet.org/wp-content/uploads/2022/10/20191015_ac_curitiba_rethoricalpractice_3.jpg"
-                //     alt="academy"
-                //     className="w-[300px] h-[200px] rounded-lg mr-10"
-                //   />
-                //   <div className=" flex flex-col  text-gray-800 text-[14px] font-semibold">
-                //     <p className=" text-gray-400 mb-3">SUPPORT US</p>
-                //     <a
-                //       href="/partner-with-us"
-                //       className="hover:bg-[#14A83F40] px-2"
-                //     >
-                //       🤝 Partner with us
-                //     </a>
-                //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                //       💼 Donate for the Research Park
-                //     </a>
-                //     <a
-                //       href="/endowent"
-                //       className="hover:bg-[#14A83F40]  px-2"
-                //     >
-                //       💖 Endowent
-                //     </a>
-                //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                //       🎁 Donate
-                //     </a>
-                //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                //       🌳 Donate Tree
-                //     </a>
-                //     <a href="/donation" className="hover:bg-[#14A83F40] px-2">
-                //       🌾 Donate Land
-                //     </a>
-                //   </div>
-                // </div>)}
-                <div className="absolute top-20 bg-white z-20 flex flex-col  text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div className="absolute top-20 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg">
                   <a
                     href="/partner-with-us"
-                    className="hover:bg-[#14A83F40] p-5 flex"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/Partnerwithus.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Partner with us
+                    <span>Partner with us</span>
                   </a>
                   <a
                     href="/donation"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/DonatefortheResearchPark.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
-                    />{" "}
-                    Donate for the Research Park
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Donate for the Research Park</span>
                   </a>
                   <a
                     href="/endowent"
-                    className="hover:bg-[#14A83F40]  p-5 flex"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
                   >
                     <img
                       src="/Endowent.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
-                    />{" "}
-                    Endowent
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Endowent</span>
                   </a>
-                  <a href="/donation" className="hover:bg-[#14A83F40] p-5 flex">
+                  <a
+                    href="/donation"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                  >
                     <img
                       src="/DonateIcon.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Donate
+                    <span>Donate</span>
                   </a>
-                  <a href="/donation" className="hover:bg-[#14A83F40] p-5 flex">
+                  <a
+                    href="/donation"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                  >
                     <img
                       src="/DonateTree.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Donate Tree
+                    <span>Donate Tree</span>
                   </a>
-                  <a href="/donation" className="hover:bg-[#14A83F40] p-5 flex">
+                  <a
+                    href="/donation"
+                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                  >
                     <img
                       src="/DonateLand.png"
-                      className="m-[-40px] w-[100px] mr-[-30px]"
+                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
-                    Donate Land
+                    <span>Donate Land</span>
                   </a>
                 </div>
               )}
             </p>
+
             <a
               className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/tracking"
@@ -347,13 +312,6 @@ export default function Header() {
               >
                 Login
               </a>
-              <a
-                className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-sm w-[150px] text-center leading-3 py-3 font-semibold"
-                href="/sponsor-form"
-              >
-                <span>Register </span>
-                <span class="mt-2">as Sponsor</span>
-              </a>
             </div>
           </nav>
           {/* <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
@@ -371,22 +329,39 @@ export default function Header() {
             </a>
           </div> */}
         </div>
-        <div className="absolute justify-center gap-4 p-2 top-40 right-0 z-64 w-fit h-[150px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center ">
-          <a
-            className="font-semibold flex items-center flex-col justify-center group"
-            href="/contact-us"
-          >
-            <FaEnvelope className="text-white text-[24px]" />
-            <p className="font-normal text-[12px] text-white opacity-0 group-hover:opacity-100">
-              Contact
-            </p>
+        <div className="absolute justify-center gap-4 p-2 top-40 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+          <a href="/contact-us" className="relative flex items-center group">
+            <FaEnvelope className="text-white text-[24px] cursor-pointer" />
+            <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
+              <p className="font-normal text-[16px] text-white cursor-pointer font-medium">
+                Contact
+              </p>
+            </span>
           </a>
-          <a href="/donation" className="flex flex-col items-center group">
+        </div>
+        <div className="absolute justify-center gap-4 p-2 top-60 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+          <a href="/donation" className="relative flex items-center group">
             <BiSolidDonateHeart className="text-white text-[24px]" />
-            <p className="font-normal text-[12px] text-white opacity-0 group-hover:opacity-100">
-              Donate
-            </p>
+            <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
+              <p className="font-normal text-[16px] text-white cursor-pointer font-medium">
+                Donate
+              </p>
+            </span>
           </a>
+        </div>
+        <div className="absolute justify-center gap-4 p-2 top-80 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+          <a href="/sponsor-form" className="relative flex items-center group">
+            <FaHandshakeSimple className="text-white text-[24px]" />
+            <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
+              <p className="font-normal text-[16px] text-white cursor-pointer font-medium">
+                Register as Sponser
+              </p>
+            </span>
+          </a>
+        </div>
+
+        <div className="relative flex items-center group">
+          <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0"></span>
         </div>
       </header>
       <div className="py-8" />
