@@ -22,6 +22,7 @@ const ImageWithContent = ({
   greenBtn = false,
   darkgreenBtn = false,
   greenText,
+  alignItem = "start",
 }) => {
   // Determine flex direction based on imageOnLeft prop
   const flexDirection = imageOnLeft
@@ -45,7 +46,7 @@ const ImageWithContent = ({
 
   return (
     <div
-      className={`flex  ${flexDirection}  justify-center items-center py-20 px-4 md:px-12 bg-${
+      className={`flex  ${flexDirection} items-${alignItem}  justify-center  py-20 px-4 md:px-12 bg-${
         background ? "[#F7FBF5]" : "transparent"
       }
       `}

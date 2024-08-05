@@ -70,6 +70,11 @@ export default function Home() {
     <>
       <ImageSlider images={images} />
       {/* <MapComponent markers={markers} /> */}
+
+      <div>
+        <img src={"/Maps.png"} alt="Content Image" />
+      </div>
+
       <PartnersTab />
       <div className="bg-[#F5F3ED]">
         <ImageWithContent
@@ -174,6 +179,7 @@ export default function Home() {
         buttonText="Tools for restoration organizations"
         imageOnLeft
         btnLink="/platform"
+        alignItem="center"
       />
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2023/07/PFTP-restoration-project-web.svg"
@@ -182,6 +188,7 @@ export default function Home() {
         rounded
         background
         partnerUsImg
+        alignItem="center"
       >
         <div className="flex">
           <ButtonWithArrow
