@@ -36,14 +36,12 @@ export default function Header() {
   };
 
   const handleMouseLeave = (item) => {
-    setTimeout(() => {
-      if (item === "support") {
-        setSupportUsMenu(false);
-      }
-      if (item === "academy") {
-        setAcademyMenu(false);
-      }
-    }, 1000);
+     if (item === "support") {
+       setSupportUsMenu(false);
+     }
+     if (item === "academy") {
+       setAcademyMenu(false);
+     }
   };
 
   const handleClickOutside = (event) => {
@@ -144,7 +142,6 @@ export default function Header() {
                 academyMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("academy")}
-              onMouseLeave={() => handleMouseLeave("academy")}
               ref={academyMenuRef}
             >
               <img
@@ -157,7 +154,10 @@ export default function Header() {
               />
               Academy
               {academyMenu && (
-                <div className="absolute top-20 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div
+                  className="absolute top-[105px] right-[430px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  onMouseLeave={() => handleMouseLeave("academy")}
+                >
                   <a
                     href="/youth-and-children"
                     className="hover:bg-[#14A83F40] p-5 flex items-center group"
@@ -207,7 +207,6 @@ export default function Header() {
                 supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("support")}
-              onMouseLeave={() => handleMouseLeave("support")}
               ref={supportMenuRef}
             >
               <img
@@ -220,64 +219,67 @@ export default function Header() {
               />
               Support Us
               {supportUsMenu && (
-                <div className="absolute top-20 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg">
+                <div
+                  className="absolute top-[105px] right-[230px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  onMouseLeave={() => handleMouseLeave("support")}
+                >
                   <a
                     href="/partner-with-us"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/Partnerwithus.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Partner with us</span>
                   </a>
                   <a
                     href="/donation"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/DonatefortheResearchPark.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Donate for the Research Park</span>
                   </a>
                   <a
                     href="/endowent"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/Endowent.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Endowent</span>
                   </a>
                   <a
                     href="/donation"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/DonateIcon.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Donate</span>
                   </a>
                   <a
                     href="/donation"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/DonateTree.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Donate Tree</span>
                   </a>
                   <a
                     href="/donation"
-                    className="hover:bg-[#14A83F40] p-5 flex items-center group"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img
                       src="/DonateLand.png"
-                      className="m-[-40px] w-[100px] mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
                     />
                     <span>Donate Land</span>
                   </a>
@@ -311,6 +313,13 @@ export default function Header() {
                 href="/login"
               >
                 Login
+              </a>
+              <a
+                className="flex items-center gap-1 rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px] w-[180px] text-center leading-3 p-2 font-semibold"
+                href="/sponsor-form"
+              >
+                <FaHandshakeSimple className="text-white text-[24px]" />
+                Register as Sponsor
               </a>
             </div>
           </nav>
@@ -349,7 +358,7 @@ export default function Header() {
             </span>
           </a>
         </div>
-        <div className="absolute justify-center gap-4 p-2 top-80 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
+        {/* <div className="absolute justify-center gap-4 p-2 top-80 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
           <a href="/sponsor-form" className="relative flex items-center group">
             <FaHandshakeSimple className="text-white text-[24px]" />
             <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
@@ -358,7 +367,7 @@ export default function Header() {
               </p>
             </span>
           </a>
-        </div>
+        </div> */}
 
         <div className="relative flex items-center group">
           <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0"></span>

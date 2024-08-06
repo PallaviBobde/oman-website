@@ -75,10 +75,10 @@ export default function Home() {
     {logo: "/logos/4.png"},
     {logo: "/logos/5.png"},
     {logo: "/logos/6.png"},
-    {logo: "/logos/7.jpg"},
+    {logo: "/logos/7.png"},
     {logo: "/logos/8.png"},
     {logo: "/logos/9.png"},
-    {logo: "/logos/10.jpg"},
+    {logo: "/logos/10.png"},
   ]
 
   return (
@@ -92,13 +92,14 @@ export default function Home() {
       </div>
 
       <PartnersTab />
-      <div className="mb-20">
-        <h2 className="text-4xl font-bold mb-10 text-[26px] text-center">
-          Our Sponsors
-        </h2>
-        <SponsorSlider sponsors={sponserImages} />
-      </div>
-      <div className="bg-[#F5F3ED]">
+      <div className="bg-[#F5F3ED] relative">
+        <img
+          className="absolute top-[-40px] left-[-30px] z-999 w-[350px] h-[80px]"
+          src={
+            "https://www.plant-for-the-planet.org/wp-content/uploads/2021/07/yucatan_bush_group.svg"
+          }
+          alt="Content Image"
+        />
         <ImageWithContent
           imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2020/12/20190919_ac_curitiba_19-scaled.jpg"
           imageOnLeft
@@ -255,7 +256,7 @@ export default function Home() {
       />
 
       <div className="flex flex-col justify-center items-center mt-[100px] mb-[200px]">
-        <h2 className="text-[40px] font-bold mb-[350px] ">Our Story</h2>
+        <h2 className="text-[40px] font-bold mb-[350px] ">How It Works</h2>
         <div className="relative">
           <img
             className=""

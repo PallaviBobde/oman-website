@@ -7,16 +7,16 @@ const PartnersTab = () => {
 
   // Define emojis for tabs
   const emojis = [
-    "/1f1e7-1f1f7.svg",
-    "/1f1e8-1f1ff.svg",
-    "/1f1e9-1f1ea.svg",
-    "/1f1ea-1f1f8.svg",
-    "/1f1ec-1f1e7.svg",
-    "/1f1ec-1f1ed.svg",
-    "/1f1ee-1f1f9.svg",
-    "/1f1f2-1f1fd.svg",
-    "/1f1fa-1f1f8.svg",
-    "/1f1fa-1f1f8.svg",
+    "/logos/1.png",
+    "/logos/3.png",
+    "/logos/4.png",
+     "/logos/5.png",
+     "/logos/6.png",
+     "/logos/7.png",
+     "/logos/8.png",
+     "/logos/9.png",
+     "/logos/10.png",
+     "/logos/11.png",
   ];
 
   const cardData = [
@@ -104,20 +104,23 @@ const PartnersTab = () => {
 
   return (
     <div className="p-10">
+      <h2 className="text-4xl font-bold my-10 text-[26px] text-center">
+        Our Sponsors
+      </h2>
       <ul
-        className={`flex border-b border-gray-200 bg-gradient-to-r from-[#007A48] to-[#65AF31] py-8 mt-10  items-center justify-center rounded-t-[20px] ${
+        className={`flex flex-wrap gap-10 border-b border-gray-200 bg-gradient-to-r from-[#007A48] to-[#65AF31] py-8 mt-10  items-center justify-center rounded-t-[20px] ${
           activeTab === -1 ? "rounded-[20px] " : "rounded-t-[20px]"
         } overflow-x-scroll`}
       >
         {emojis.map((imgUrl, index) => (
           <li key={index} className=" mr-1">
             <button
-              className={`inline-block mx-2 py-2 px-9 rounded-[10px] text-[24px] bg-[#91BDA4] hover:bg-white ${
+              className={`inline-block mx-2 py-1 px-5 rounded-[10px] text-[24px] bg-[#91BDA4] hover:bg-white ${
                 activeTab === index && "bg-white"
               } `}
               onClick={() => setActiveTab(index)}
             >
-              <Image src={imgUrl} width={30} height={30} />
+              <Image src={imgUrl} width={100} height={100} />
             </button>
           </li>
         ))}
