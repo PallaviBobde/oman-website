@@ -329,7 +329,7 @@ export default function Header() {
             </a>
           </div> */}
         </div>
-        <div className="absolute justify-center gap-4 p-2 top-40 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+        <div className="absolute justify-center gap-4 p-2 top-40 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
           <a href="/contact-us" className="relative flex items-center group">
             <FaEnvelope className="text-white text-[24px] cursor-pointer" />
             <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
@@ -339,7 +339,7 @@ export default function Header() {
             </span>
           </a>
         </div>
-        <div className="absolute justify-center gap-4 p-2 top-60 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+        <div className="absolute justify-center gap-4 p-2 top-60 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
           <a href="/donation" className="relative flex items-center group">
             <BiSolidDonateHeart className="text-white text-[24px]" />
             <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
@@ -349,7 +349,7 @@ export default function Header() {
             </span>
           </a>
         </div>
-        <div className="absolute justify-center gap-4 p-2 top-80 left-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-r-[20px] items-center">
+        <div className="absolute justify-center gap-4 p-2 top-80 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
           <a href="/sponsor-form" className="relative flex items-center group">
             <FaHandshakeSimple className="text-white text-[24px]" />
             <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">

@@ -23,22 +23,43 @@ const ImageSlider = ({ images }) => {
   return (
     <div className={styles.sliderContainer}>
       <div className={styles.slider}>
-        <div
-          className={styles.sliderInner}
-          style={{ backgroundImage: `url(${images[currentIndex]})` }}
-        >
-          <button className={styles.leftArrow} onClick={prevSlide}>
-            <FaChevronLeft />
-          </button>
-          <button className={styles.rightArrow} onClick={nextSlide}>
-            <FaChevronRight />
-          </button>
-          <div className="text-4xl text-white font-bold w-full h-full text-center flex justify-center items-center pt-20">
-            <p className="w-3/4">
-              The world had 3 trillion trees. But do you know where they are?
-            </p>
+        {currentIndex == 0 && (
+          <div className={styles.videosliderInner}>
+            <button className={styles.videoLeftArrow} onClick={prevSlide}>
+              <FaChevronLeft />
+            </button>
+            <button className={styles.videoRightArrow} onClick={nextSlide}>
+              <FaChevronRight />
+            </button>
+            <iframe
+              width={"100%"}
+              height={"100%"}
+              src={images[currentIndex]}
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+              allowFullScreen={true}
+            ></iframe>
           </div>
-        </div>
+        )}
+
+        {currentIndex != 0 && (
+          <div
+            className={styles.sliderInner}
+            style={{ backgroundImage: `url(${images[currentIndex]})` }}
+          >
+            <button className={styles.leftArrow} onClick={prevSlide}>
+              <FaChevronLeft />
+            </button>
+            <button className={styles.rightArrow} onClick={nextSlide}>
+              <FaChevronRight />
+            </button>
+            <div className="text-4xl text-white font-bold w-full h-full text-center flex justify-center items-center pt-20">
+              <p className="w-3/4">
+                The world had 3 trillion trees. But do you know where they are?
+              </p>
+            </div>
+          </div>
+        )}
       </div>
       <div className={styles.dots}>
         {images.map((_, index) => (

@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./SponsorSlider.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const ITEMS_PER_SLIDE = 3; // Number of items to display per slide
+const ITEMS_PER_SLIDE = 4; // Number of items to display per slide
 
 const SponsorSlider = ({ sponsors }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +39,7 @@ const SponsorSlider = ({ sponsors }) => {
             <div key={index} className={styles.slide}>
               {chunk.map((sponsor, idx) => (
                 <div key={idx} className={styles.slideItem}>
-                  <img src={sponsor.logo} style={{objectFit:"contain"}} alt={`Sponsor ${idx}`} />
+                  <img src={sponsor.logo} style={{width:"200px",height:"200px", objectFit:"contain"}} alt={`Sponsor ${idx}`} />
                 </div>
               ))}
             </div>
