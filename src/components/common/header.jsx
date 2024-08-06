@@ -155,7 +155,7 @@ export default function Header() {
               Academy
               {academyMenu && (
                 <div
-                  className="absolute top-[105px] right-[430px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  className="absolute top-[105px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
                   onMouseLeave={() => handleMouseLeave("academy")}
                 >
                   <a
@@ -220,7 +220,7 @@ export default function Header() {
               Support Us
               {supportUsMenu && (
                 <div
-                  className="absolute top-[105px] right-[230px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  className="absolute top-[105px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
                   onMouseLeave={() => handleMouseLeave("support")}
                 >
                   <a
