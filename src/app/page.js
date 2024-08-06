@@ -17,6 +17,7 @@ const MapComponent = dynamic(
 // const flowbite = dynamic(()=>import('flowbite'));
 import AcademyCard from "@/components/youth-and-children/academyCard";
 import { useEffect } from "react";
+import SponsorSlider from "@/components/common/SponserSlider";
 
 // export default function Home() {
 //   const markers = [
@@ -66,9 +67,23 @@ export default function Home() {
     "https://cdn.pixabay.com/photo/2023/06/10/16/02/plant-8054344_1280.jpg",
   ];
 
+  const sponserImages = [
+    {logo: "/logos/1.png"},
+    {logo: "/logos/2.png"},
+    {logo: "/logos/3.png"},
+    {logo: "/logos/4.png"},
+    {logo: "/logos/5.png"},
+    {logo: "/logos/6.png"},
+    {logo: "/logos/7.jpg"},
+    {logo: "/logos/8.png"},
+    {logo: "/logos/9.png"},
+    {logo: "/logos/10.jpg"},
+  ]
+
   return (
     <>
       <ImageSlider images={images} />
+      <SponsorSlider sponsors={sponserImages} />
       {/* <MapComponent markers={markers} /> */}
 
       <div>
