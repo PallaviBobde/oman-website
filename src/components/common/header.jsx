@@ -78,7 +78,7 @@ export default function Header() {
               style={{ objectFit: "contain" }}
             />
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/"
             >
               <img
@@ -88,7 +88,7 @@ export default function Header() {
               Home
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/platform"
             >
               <img
@@ -98,7 +98,7 @@ export default function Header() {
               Platform
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/about-us"
             >
               <img
@@ -108,17 +108,17 @@ export default function Header() {
               About us
             </a>
             <a
-              className="flex flex-col items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/statics-and-records"
             >
               <img
                 src="/Statics&Records.png"
-                className="m-[-30px] w-[92px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
               />
-              Statics and Records
+              Records
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/projects"
             >
               <img
@@ -128,17 +128,17 @@ export default function Header() {
               Projects
             </a>
             <a
-              className="flex flex-col items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/live-and-podcasts"
             >
               <img
                 src="/Liveandpodcasts.png"
-                className="m-[-30px] w-[92px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
               />
-              Live and podcasts
+              Media
             </a>
             <div
-              className={`flex flex-col items-center text-[14px] font-bold cursor-pointer ${
+              className={`flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 academyMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("academy")}
@@ -193,7 +193,7 @@ export default function Header() {
             </div>
 
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/support-us"
             >
               <img
@@ -203,7 +203,7 @@ export default function Header() {
               Requests
             </a>
             <p
-              className={`flex flex-col items-center text-[14px] font-bold cursor-pointer ${
+              className={`flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("support")}
@@ -288,7 +288,7 @@ export default function Header() {
             </p>
 
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/tracking"
             >
               <img
@@ -298,7 +298,7 @@ export default function Header() {
               Tracking
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/blogs"
             >
               <img
