@@ -68,7 +68,7 @@ export default function Header() {
     <>
       <header className="text-gray-600 body-font border-b-2 fixed top-0 bg-white w-full z-20">
         <div className=" mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center  z-9999">
-          <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-base justify-between items-center text-s py-5 my-[-30px] w-full">
+          <nav className="md:ml-auto md:mr-auto flex text-base justify-between items-center  py-5 my-[-30px] w-full">
             <Image
               src="/main-logo.png"
               width={120}
@@ -108,7 +108,7 @@ export default function Header() {
               About us
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/statics-and-records"
             >
               <img
@@ -128,7 +128,7 @@ export default function Header() {
               Projects
             </a>
             <a
-              className="flex flex-col items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              className="flex flex-col items-center align-middle text-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/live-and-podcasts"
             >
               <img
