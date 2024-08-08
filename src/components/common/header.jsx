@@ -17,7 +17,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { BiSolidDonateHeart } from "react-icons/bi";
-import { FaHandshakeSimple } from "react-icons/fa6";
+import { FaHandshakeSimple, FaRegCircleUser } from "react-icons/fa6";
 
 
 export default function Header() {
@@ -68,7 +68,7 @@ export default function Header() {
     <>
       <header className="text-gray-600 body-font border-b-2 fixed top-0 bg-white w-full z-20">
         <div className=" mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center  z-9999">
-          <nav className="md:ml-auto md:mr-auto flex text-base justify-between items-center  py-5 my-[-30px] w-full">
+          <nav className="md:ml-auto md:mr-auto flex text-base justify-evenly items-center  py-5 my-[-30px] w-full">
             <Image
               src="/main-logo.png"
               width={120}
@@ -138,7 +138,7 @@ export default function Header() {
               Media
             </a>
             <div
-              className={`flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
+              className={`relative flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 academyMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("academy")}
@@ -155,7 +155,7 @@ export default function Header() {
               Academy
               {academyMenu && (
                 <div
-                  className="absolute top-[105px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  className="absolute w-[250px] top-[85px] left-0 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
                   onMouseLeave={() => handleMouseLeave("academy")}
                 >
                   <a
@@ -203,7 +203,7 @@ export default function Header() {
               Requests
             </a>
             <p
-              className={`flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
+              className={`relative flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("support")}
@@ -220,7 +220,7 @@ export default function Header() {
               Support Us
               {supportUsMenu && (
                 <div
-                  className="absolute top-[105px] bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  className="absolute w-[280px] top-[85px] left-0 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
                   onMouseLeave={() => handleMouseLeave("support")}
                 >
                   <a
@@ -307,21 +307,44 @@ export default function Header() {
               />{" "}
               Blogs
             </a>
-            <div className="flex flex-col gap-2 items-center">
+            <a
+              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
+              href="/login"
+            >
+              <FaRegCircleUser
+                style={{ fontSize: "28px" }}
+                className="filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
+              />
+              Sign In
+            </a>
+            {/* <div className="flex flex-col gap-2 items-center">
               <a
                 className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-sm w-[100px] text-center leading-3 py-3 font-semibold"
                 href="/login"
               >
                 Login
-              </a>
-              <a
-                className="flex items-center gap-1 rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px] w-[180px] text-center leading-3 p-2 font-semibold"
+              </a> */}
+            {/* <a
+                href="/sponsor-form"
+                className="rounded-[25px] bg-gradient-to-b from-[#14A83F] to-[#0C7D48] p-2 flex items-center group text-[#fff] font-semibold text-[14px]"
+              >
+                <img
+                  src="/Partnerwithus.png"
+                  className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-[1000%]"
+                />
+                <span>Register as Sponsor</span>
+              </a> */}
+            {/* <a
+                className="flex items-center gap-1  bg-gradient-to-b from-[#14A83F] to-[#0C7D48] text-[#fff]  text-[14px] w-[180px] text-center leading-3 p-2 font-semibold"
                 href="/sponsor-form"
               >
-                <FaHandshakeSimple className="text-white text-[24px]" />
+                <img
+                  src="/Partnerwithus.png"
+                  className="w-[30px] h-[40px]font-bold filter grayscale brightness-[1000%]"
+                />
                 Register as Sponsor
-              </a>
-            </div>
+              </a> */}
+            {/* </div> */}
           </nav>
           {/* <div className="absolute right-0 py-1 px-2 top-0  rounded-md flex">
             <a
@@ -358,7 +381,7 @@ export default function Header() {
             </span>
           </a>
         </div>
-        {/* <div className="absolute justify-center gap-4 p-2 top-80 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
+        <div className="absolute justify-center gap-4 p-2 top-80 right-0 z-64 w-fit h-[60px] bg-[#14A83F] flex flex-col rounded-l-[20px] items-center">
           <a href="/sponsor-form" className="relative flex items-center group">
             <FaHandshakeSimple className="text-white text-[24px]" />
             <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0">
@@ -367,7 +390,7 @@ export default function Header() {
               </p>
             </span>
           </a>
-        </div> */}
+        </div>
 
         <div className="relative flex items-center group">
           <span className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:relative group-hover:left-0"></span>
