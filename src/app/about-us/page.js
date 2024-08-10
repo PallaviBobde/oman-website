@@ -6,43 +6,60 @@ import MasterContainer from "@/components/common/MasterContainer";
 import { PatronCard } from "@/components/common/RoundImageAndText";
 
 export default function Page() {
+
+  const teamCategories = [
+    { categoryName: "ALL", selected: true },
+    { categoryName: "EMPOWERMENT", selected: false },
+    { categoryName: "CHOCOLATE", selected: false },
+    { categoryName: "COMMUNICATIONS", selected: false },
+    { categoryName: "CORPORATE PARTNERSHIPS", selected: false },
+    { categoryName: "INSTITUTIONAL FUNDRAISING", selected: false },
+    { categoryName: "INTERNATIONAL", selected: false },
+    { categoryName: "LOGISTICS", selected: false },
+    { categoryName: "MANAGEMENT", selected: false },
+    { categoryName: "PRIVATE SPONSERSHIP", selected: false },
+    { categoryName: "PLATFORM", selected: false },
+  ];
+
   return (
     <>
-    <div className="py-10 bg-[#F7FBF5]">
-<ImageWithContent
-        imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2021/05/header_tem_site_monaco.jpg"
-        heading="About Plant-for-the-Planet Organization"
-        rounded
-        border
-        background
-      >
-        <p className="text-lg mb-4 text-gray-700 mt-10">
-          <span className="text-[#209653]">Plant-for-the-Planet </span>is a
-          global movement to restore forest ecosystems to tackle the climate
-          crisis and biodiversity loss. To do so, we{" "}
-          <span className="text-[#209653]">empower young people</span>,{" "}
-          <span className="text-[#209653]">restore ecosystems</span>,{" "}
-          <span className="text-[#209653]">conduct restoration research</span>,{" "}
-          <span className="text-[#209653]">provide free software tools</span>{" "}
-          and <span className="text-[#209653]">restoration advice</span> for
-          organizations around the world. <br />
-          <br />
-          We believe that we need to protect the world’s three trillion trees
-          and{" "}
-          <span className="text-[#209653]">
-            bring back a further one trillion trees.
-          </span>{" "}
-          <br />
-          <br />
-          Plant-for-the-Planet is a network of independent organisations united
-          by a common vision.
-        </p>
-      </ImageWithContent>
-    </div>
-      
+      <div className="py-10 bg-[#F7FBF5]">
+        <ImageWithContent
+          imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2021/05/header_tem_site_monaco.jpg"
+          heading="About Plant-for-the-Planet Organization"
+          rounded
+          border
+          background
+        >
+          <p className="text-lg mb-4 text-gray-700 mt-10">
+            <span className="text-[#209653]">Plant-for-the-Planet </span>is a
+            global movement to restore forest ecosystems to tackle the climate
+            crisis and biodiversity loss. To do so, we{" "}
+            <span className="text-[#209653]">empower young people</span>,{" "}
+            <span className="text-[#209653]">restore ecosystems</span>,{" "}
+            <span className="text-[#209653]">conduct restoration research</span>
+            ,{" "}
+            <span className="text-[#209653]">provide free software tools</span>{" "}
+            and <span className="text-[#209653]">restoration advice</span> for
+            organizations around the world. <br />
+            <br />
+            We believe that we need to protect the world’s three trillion trees
+            and{" "}
+            <span className="text-[#209653]">
+              bring back a further one trillion trees.
+            </span>{" "}
+            <br />
+            <br />
+            Plant-for-the-Planet is a network of independent organisations
+            united by a common vision.
+          </p>
+        </ImageWithContent>
+      </div>
+      <h2 className="text-4xl font-bold text-gray-700 text-center bg-[#F7FBF5]">
+        Mission And Vision
+      </h2>
       <ImageWithContent
         imageUrl="https://www.plant-for-the-planet.org/wp-content/uploads/2024/07/Plant-for-the-Planet-Global-Board-2024-25.png"
-        heading="Mission and Vision"
         subheading="Plant-for-the-Planet thrives on the most outstanding children and young people. To spread the word, we have a Global Board with young leaders around the world. They are committed to climate justice and tree planting on a voluntary basis. The Global Board is elected every year."
         buttonText="Get to know our Global Board members"
         background
@@ -51,16 +68,20 @@ export default function Page() {
         heading="Patrons"
         subtext="We would like to thank our patrons who have accompanied Plant-for-the-Planet from the very beginning."
       >
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
-            heading={"Prince Albert II of Monaco"}
-            subtext={"Patron"}
-          />
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
-            heading={"Prince Albert II of Monaco"}
-            subtext={"Patron"}
-          />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
+          heading={"Prince Albert II of Monaco"}
+          subtext={"Patron"}
+          btnLink=""
+          btnText="Linkedin"
+        />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_1280.jpg"
+          heading={"Prince Albert II of Monaco"}
+          subtext={"Patron"}
+          btnLink=""
+          btnText="Linkedin"
+        />
       </HeadingSubtextDataContainer>
 
       <h2 className="text-4xl font-bold mt-20 text-gray-700 text-center">
@@ -82,6 +103,23 @@ export default function Page() {
           Plant-for-the-Planet. We are passionate activists for climate justice.
         </p>
       </ImageWithContent>
+
+      <div className="px-10 mb-10">
+        <ul className="text-gray-700 flex gap-3 flex-wrap justify-center font-bold text-[17px] tracking-widest">
+          {teamCategories.map((category, index) => (
+            <li
+              key={index}
+              className={`cursor-pointer ${
+                category.selected
+                  ? "text-green-500 border-b-2 border-gray-700"
+                  : "hover:text-green-500 hover:border-b-2 hover:border-gray-700"
+              } mx-3`}
+            >
+              <p className="pb-1">{category.categoryName}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="flex flex-wrap justify-center">
         <FlipCard
@@ -377,53 +415,45 @@ export default function Page() {
         </>
       </HeadingSubtextDataContainer>
 
-       <HeadingSubtextDataContainer
+      <HeadingSubtextDataContainer
         heading="Educational Advisory Board"
         subtext="The Educational Advisory Board evaluates, provides consultation on, and helps to further develop our educational work with children."
       >
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            heading={"Evelyn Araripe"}
-            subtext={
-              "Educational Advisor"
-            }
-            margin
-            btnLink=""
-            btnText="Linkedin"
-          />
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            heading={"Evelyn Araripe"}
-            subtext={
-              "Educational Advisor"
-            }
-            margin
-            btnLink=""
-            btnText="Linkedin"
-          />
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            heading={"Evelyn Araripe"}
-            subtext={
-              "Educational Advisor"
-            }
-            margin
-            btnLink=""
-            btnText="Linkedin"
-          />
-          <PatronCard
-            imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
-            heading={"Evelyn Araripe"}
-            subtext={
-              "Educational Advisor"
-            }
-            margin
-            btnLink=""
-            btnText="Linkedin"
-          />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+          heading={"Evelyn Araripe"}
+          subtext={"Educational Advisor"}
+          margin
+          btnLink=""
+          btnText="Linkedin"
+        />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+          heading={"Evelyn Araripe"}
+          subtext={"Educational Advisor"}
+          margin
+          btnLink=""
+          btnText="Linkedin"
+        />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+          heading={"Evelyn Araripe"}
+          subtext={"Educational Advisor"}
+          margin
+          btnLink=""
+          btnText="Linkedin"
+        />
+        <PatronCard
+          imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
+          heading={"Evelyn Araripe"}
+          subtext={"Educational Advisor"}
+          margin
+          btnLink=""
+          btnText="Linkedin"
+        />
       </HeadingSubtextDataContainer>
 
-       <HeadingSubtextDataContainer
+      <HeadingSubtextDataContainer
         heading="Ombudsperson"
         subtext="Ulrich Martin Drescher assumes the role of independent ombudsperson for us. Issues are reported to him and he arranges for these to be resolved. Anyone with a complaint or concern can reach him by e-mail: planet@umd.de Thank you very much in advance."
       >
@@ -431,9 +461,7 @@ export default function Page() {
           <PatronCard
             imageUrl="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg"
             heading={"Ulrich Martin Drescher"}
-            subtext={
-              ""
-            }
+            subtext={""}
             margin
             btnLink=""
             btnText="Linkedin"

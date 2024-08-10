@@ -1,11 +1,12 @@
-'use client'
-import React, { useEffect, useRef, useState } from "react";
-import ButtonWithArrow from "./ButtonWithArrow";
+"use client";
+import { useEffect, useRef, useState } from "react";
 import { FaRegFilePdf } from "react-icons/fa";
+import ButtonWithArrow from "./ButtonWithArrow";
 
 const ImageWithContent = ({
   imageUrl,
   heading,
+  subTitle,
   subheading,
   buttonText,
   imageOnLeft,
@@ -19,8 +20,9 @@ const ImageWithContent = ({
   partnerUsImg = false,
   tag,
   greenBtn = false,
-  darkgreenBtn=false,
+  darkgreenBtn = false,
   greenText,
+  alignItem = "start",
 }) => {
   // Determine flex direction based on imageOnLeft prop
   const flexDirection = imageOnLeft
@@ -44,7 +46,7 @@ const ImageWithContent = ({
 
   return (
     <div
-      className={`flex  ${flexDirection} items-center justify-center py-20 px-4 md:px-12 bg-${
+      className={`flex  ${flexDirection} items-${alignItem}  justify-center  py-20 px-4 md:px-12 bg-${
         background ? "[#F7FBF5]" : "transparent"
       }
       `}
@@ -86,17 +88,19 @@ const ImageWithContent = ({
         )}
         {greenText && (
           <>
-           <p className="text-[24px] mb-6 text-green-500 font-semibold border w-fit p-5 rounded-lg shadow-lg">
-            <FaRegFilePdf />
+            <p className="text-[24px] mb-6 text-green-500 font-semibold border w-fit p-5 rounded-lg shadow-lg">
+              <FaRegFilePdf />
             </p>
             <p className="text-xl uppercase text-green-500 font-semibold">
               {greenText}
             </p>
           </>
         )}
-        {heading && (
-          <h2 className="text-4xl font-bold mb-5  ">{heading}</h2>
+        {heading && <h2 className="text-[28px] font-bold mb-5  ">{heading}</h2>}
+        {subTitle && (
+          <h4 className="text-2xl font-semibold mb-5  ">{subTitle}</h4>
         )}
+
         {subheading && <p className="text-[20px] mb-4 ">{subheading}</p>}
         {children && children}
         {buttonText && (

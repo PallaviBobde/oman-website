@@ -95,8 +95,11 @@ export default function Page() {
         <div className="text-gray-800 font-semibold mx-5 text-[20px] hover:text-gray-500 cursor-pointer">
           Global Board
         </div>
+        <div className="text-gray-800 font-semibold mx-5 text-[20px] hover:text-gray-500 cursor-pointer">
+          Research
+        </div>
         <div className="text-gray-800 font-semibold mx-5 text-[32px] hover:text-gray-500 cursor-pointer">
-           <MdSearch />
+          <MdSearch />
         </div>
       </div>
 
