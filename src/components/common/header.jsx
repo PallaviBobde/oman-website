@@ -241,7 +241,7 @@ export default function Header() {
                     <span>Research Fellowships</span>
                   </a>
                   <a
-                    href="/membership"
+                    href="/donor-circle"
                     className="hover:bg-[#14A83F40] p-3 flex items-center group"
                   >
                     <img

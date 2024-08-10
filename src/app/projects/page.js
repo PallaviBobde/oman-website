@@ -1,3 +1,4 @@
+"use client"
 import ProjectCard from "@/components/common/ProjectCard";
 import Image from "next/image";
 import { FiFilter } from 'react-icons/fi';
