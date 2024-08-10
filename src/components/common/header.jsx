@@ -26,6 +26,7 @@ export default function Header() {
   const [requestsMenu, setRequestsMenu] = useState(false);
   const supportMenuRef = useRef(null);
   const academyMenuRef = useRef(null);
+  const requestsRef = useRef(null);
 
   const handleMouseEnter = (item) => {
     if (item === "support") {
@@ -34,7 +35,7 @@ export default function Header() {
     if (item === "academy") {
       setAcademyMenu(true);
     }
-    if(item==="requests"){
+    if (item === "requests") {
       setRequestsMenu(true);
     }
   };
@@ -46,8 +47,8 @@ export default function Header() {
      if (item === "academy") {
        setAcademyMenu(false);
      }
-     if(item==="requests"){
-      setRequestsMenu(false);
+     if (item === "requests") {
+       setRequestsMenu(false);
      }
   };
 
@@ -56,7 +57,9 @@ export default function Header() {
       supportMenuRef.current &&
       !supportMenuRef.current.contains(event.target) &&
       academyMenuRef.current &&
-      !academyMenuRef.current.contains(event.target)
+      !academyMenuRef.current.contains(event.target) &&
+      requestsRef.current &&
+      !requestsRef.current.contains(event.target)
     ) {
       setSupportUsMenu(false);
       setAcademyMenu(false);
@@ -204,7 +207,7 @@ export default function Header() {
                 requestsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
               }`}
               onMouseEnter={() => handleMouseEnter("requests")}
-              ref={supportMenuRef}
+              ref={requestsRef}
             >
               <img
                 src="/Requests.png"
@@ -250,16 +253,6 @@ export default function Header() {
                     />
                     <span>Membership</span>
                   </a>
-                  {/* <a
-                    href="/donor-circle"
-                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
-                  >
-                    <img
-                      src="/DonateIcon.png"
-                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
-                    />
-                    <span>Donate</span>
-                  </a> */}
                   <a
                     href="/volunteers"
                     className="hover:bg-[#14A83F40] p-3 flex items-center group"
@@ -273,16 +266,6 @@ export default function Header() {
                 </div>
               )}
             </p>
-            {/* <a
-              className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
-              href="/support-us"
-            >
-              <img
-                src="/Requests.png"
-                className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
-              />
-              Requests
-            </a> */}
             <p
               className={`relative flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
