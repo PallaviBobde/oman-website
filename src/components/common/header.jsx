@@ -23,6 +23,7 @@ import { FaHandshakeSimple, FaRegCircleUser } from "react-icons/fa6";
 export default function Header() {
   const [supportUsMenu, setSupportUsMenu] = useState(false);
   const [academyMenu, setAcademyMenu] = useState(false);
+  const [requestsMenu, setRequestsMenu] = useState(false);
   const supportMenuRef = useRef(null);
   const academyMenuRef = useRef(null);
 
@@ -33,6 +34,9 @@ export default function Header() {
     if (item === "academy") {
       setAcademyMenu(true);
     }
+    if(item==="requests"){
+      setRequestsMenu(true);
+    }
   };
 
   const handleMouseLeave = (item) => {
@@ -41,6 +45,9 @@ export default function Header() {
      }
      if (item === "academy") {
        setAcademyMenu(false);
+     }
+     if(item==="requests"){
+      setRequestsMenu(false);
      }
   };
 
@@ -53,6 +60,7 @@ export default function Header() {
     ) {
       setSupportUsMenu(false);
       setAcademyMenu(false);
+      setRequestsMenu(false);
     }
   };
 
@@ -191,8 +199,81 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-            <a
+            <p
+              className={`relative flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
+                requestsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"
+              }`}
+              onMouseEnter={() => handleMouseEnter("requests")}
+              ref={supportMenuRef}
+            >
+              <img
+                src="/Requests.png"
+                className={`m-[-30px] w-[150px] filter ${
+                  requestsMenu
+                    ? "grayscale-0 brightness-100"
+                    : "grayscale brightness-0"
+                }`}
+              />
+              Requests
+              {requestsMenu && (
+                <div
+                  className="absolute w-[280px] top-[85px] left-0 bg-white z-20 flex flex-col text-gray-800 text-[14px] font-semibold shadow rounded-lg"
+                  onMouseLeave={() => handleMouseLeave("requests")}
+                >
+                  <a
+                    href="/sustainable-events"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
+                  >
+                    <img
+                      src="/Partnerwithus.png"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Sustainable Events</span>
+                  </a>
+                  <a
+                    href="/donate-for-research-park"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
+                  >
+                    <img
+                      src="/DonatefortheResearchPark.png"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Research Fellowships</span>
+                  </a>
+                  <a
+                    href="/membership"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
+                  >
+                    <img
+                      src="/Endowent.png"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Membership</span>
+                  </a>
+                  {/* <a
+                    href="/donor-circle"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
+                  >
+                    <img
+                      src="/DonateIcon.png"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>Donate</span>
+                  </a> */}
+                  <a
+                    href="/volunteers"
+                    className="hover:bg-[#14A83F40] p-3 flex items-center group"
+                  >
+                    <img
+                      src="/DonateTree.png"
+                      className="m-[-40px] w-[100px] font-bold mr-[-30px] filter grayscale brightness-0 group-hover:grayscale-0 group-hover:brightness-100"
+                    />
+                    <span>To Be Volunteers</span>
+                  </a>
+                </div>
+              )}
+            </p>
+            {/* <a
               className="flex flex-col gap-1 items-center text-[14px] hover:text-[#14A83F] font-bold group"
               href="/support-us"
             >
@@ -201,7 +282,7 @@ export default function Header() {
                 className="m-[-30px] w-[150px] filter grayscale brightness-0 group-hover:brightness-100 group-hover:filter-none"
               />
               Requests
-            </a>
+            </a> */}
             <p
               className={`relative flex flex-col gap-1 items-center text-[14px] font-bold cursor-pointer ${
                 supportUsMenu ? "text-[#14A83F]" : "hover:text-[#14A83F]"

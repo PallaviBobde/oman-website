@@ -8,47 +8,20 @@ import MasterContainer from "@/components/common/MasterContainer";
 import VideoContainer from "@/components/common/VideoContainer";
 import PartnersTab from "@/components/home/PartnersTabs";
 import dynamic from "next/dynamic";
-// import MapComponent from "@/components/common/MapComponent";
 const MapComponent = dynamic(
   () => import("../components/common/MapComponent"),
   { ssr: false }
 );
 
-// const flowbite = dynamic(()=>import('flowbite'));
 import AcademyCard from "@/components/youth-and-children/academyCard";
 import { useEffect } from "react";
-import SponsorSlider from "@/components/common/SponserSlider";
-
-// export default function Home() {
-//   const markers = [
-//   { position: [51.505, -0.09], popupContent: 'Marker 1' },
-//   { position: [51.51, -0.1], popupContent: 'Marker 2' },
-//   // Add more markers as needed
-// ];
-//   return (
-//     <>
-//      <MapComponent markers={markers} />
-//     </>
-//   );
-// }
-
-const markers = [
-  { position: [51.505, -0.09], popupContent: "Marker 1" },
-  { position: [51.51, -0.1], popupContent: "Marker 2" },
-  // Add more markers as needed
-];
 
 export default function Home() {
   useEffect(() => {
-    // Dynamically import Flowbite
     const loadFlowbite = async () => {
       const flowbiteModule = await import("flowbite");
-      // Assuming Flowbite exports an initialization function
-      // Adjust according to actual export if necessary
       flowbiteModule.default();
     };
-
-    // Call the function to load Flowbite
     loadFlowbite();
   }, []);
   const videoLinks = [
@@ -68,29 +41,12 @@ export default function Home() {
     "https://cdn.pixabay.com/photo/2023/06/10/16/02/plant-8054344_1280.jpg",
   ];
 
-  const sponserImages = [
-    {logo: "/logos/1.png"},
-    {logo: "/logos/2.png"},
-    {logo: "/logos/3.png"},
-    {logo: "/logos/4.png"},
-    {logo: "/logos/5.png"},
-    {logo: "/logos/6.png"},
-    {logo: "/logos/7.png"},
-    {logo: "/logos/8.png"},
-    {logo: "/logos/9.png"},
-    {logo: "/logos/10.png"},
-  ]
 
   return (
     <>
       <ImageSlider images={images} />
 
-      {/* <MapComponent markers={markers} /> */}
-
-      <div>
-        <img src={"/Maps.png"} alt="Content Image" />
-      </div>
-
+      <MapComponent />
       <PartnersTab />
       <div className="bg-[#F5F3ED] relative">
         <img
